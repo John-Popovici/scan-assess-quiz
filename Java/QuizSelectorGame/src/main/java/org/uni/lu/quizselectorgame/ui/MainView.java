@@ -6,9 +6,12 @@ import com.vaadin.flow.component.Key;
 import com.vaadin.flow.component.Text;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.card.Card;
+import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+import com.vaadin.flow.component.progressbar.ProgressBar;
 import com.vaadin.flow.router.Route;
+import com.vaadin.flow.theme.lumo.LumoIcon;
 import org.uni.lu.quizselectorgame.repository.ScoreChange;
 import org.uni.lu.quizselectorgame.repository.SecurityScore;
 import org.uni.lu.quizselectorgame.repository.questions.AbstractQuestion;
@@ -30,7 +33,23 @@ public class MainView extends VerticalLayout {
     }
 
     private VerticalLayout getSecurityScoreLayout() {
-        return new VerticalLayout();
+        VerticalLayout verticalLayout = new VerticalLayout(getProgressBarLayout(LumoIcon.EYE),
+                getProgressBarLayout(LumoIcon.USER),
+                getProgressBarLayout(LumoIcon.CHEVRON_LEFT),
+                getProgressBarLayout(LumoIcon.BAR_CHART),
+                getProgressBarLayout(LumoIcon.CHECKMARK),
+                getProgressBarLayout(LumoIcon.BELL));
+        return verticalLayout;
+    }
+
+    private HorizontalLayout getProgressBarLayout(LumoIcon icon) {
+        ProgressBar catOneProgressBar = new ProgressBar(0, 100, 50);
+        catOneProgressBar.setWidthFull();
+        Icon catOneIcon = icon.create();
+        HorizontalLayout horizontalLayout = new HorizontalLayout(catOneIcon, catOneProgressBar);
+        horizontalLayout.setAlignItems(Alignment.CENTER);
+        horizontalLayout.setWidthFull();
+        return horizontalLayout;
     }
 
     private void addQuestion(AbstractQuestion question) {

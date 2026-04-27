@@ -1,6 +1,7 @@
 package org.uni.lu.quizselectorgame.repository.questions;
 
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import org.uni.lu.quizselectorgame.enums.QuestionOption;
 import org.uni.lu.quizselectorgame.enums.ScoreMovementType;
 import org.uni.lu.quizselectorgame.enums.ScoreType;
@@ -8,6 +9,7 @@ import org.uni.lu.quizselectorgame.repository.ScoreChange;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Type;
 import java.nio.file.Files;
 import java.util.*;
 import java.util.logging.Level;
@@ -30,13 +32,15 @@ public class QuestionRepository {
             boolean jsonDataRead = false;
             File directory = new File("Questions/");
             if (directory.exists()) {
-                File[] jsonFiles = directory.listFiles((dir, name) -> name.toLowerCase(Locale.ROOT).endsWith("json"));
+                File[] jsonFiles = directory.listFiles((_, name) -> name.toLowerCase(Locale.ROOT).endsWith("json"));
                 if (jsonFiles != null) {
                     for (File jsonFile : jsonFiles) {
                         try {
                             String jsonRead = new String(Files.readAllBytes(jsonFile.toPath()));
                             Gson gson = new Gson();
-                            QuestionJson questionJson = gson.fromJson(jsonRead, QuestionJson.class);
+                            Type listType = new TypeToken<List<QuestionJson>>() {
+                            }.getType();
+                            QuestionJson questionJson = gson.fromJson(jsonRead, listType);
                             //Convert json into a question
                             jsonDataRead = true;
                         } catch (IOException e) {
