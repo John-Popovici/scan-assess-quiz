@@ -1,14 +1,21 @@
 package org.uni.lu.quizselectorgame.repository.questions;
 
+import com.google.gson.Gson;
 import org.uni.lu.quizselectorgame.enums.QuestionOption;
 import org.uni.lu.quizselectorgame.enums.ScoreMovementType;
 import org.uni.lu.quizselectorgame.enums.ScoreType;
 import org.uni.lu.quizselectorgame.repository.ScoreChange;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class QuestionRepository {
+
+    private final Logger logger = Logger.getLogger(QuestionRepository.class.getName());
     private final List<AbstractQuestion> questionList = new ArrayList<>();
 
     public QuestionRepository() {
@@ -20,7 +27,27 @@ public class QuestionRepository {
             createDummyQuestions();
         } else {
             //read JSON data
-            File file = new File("");
+            boolean jsonDataRead = false;
+            File directory = new File("Questions/");
+            if (directory.exists()) {
+                File[] jsonFiles = directory.listFiles((dir, name) -> name.toLowerCase(Locale.ROOT).endsWith("json"));
+                if (jsonFiles != null) {
+                    for (File jsonFile : jsonFiles) {
+                        try {
+                            String jsonRead = new String(Files.readAllBytes(jsonFile.toPath()));
+                            Gson gson = new Gson();
+                            QuestionJson questionJson = gson.fromJson(jsonRead, QuestionJson.class);
+                            //Convert json into a question
+                            jsonDataRead = true;
+                        } catch (IOException e) {
+                            logger.log(Level.WARNING, e.getMessage());
+                        }
+                    }
+                }
+            }
+            if (!jsonDataRead) {
+                createDummyQuestions();
+            }
         }
     }
 

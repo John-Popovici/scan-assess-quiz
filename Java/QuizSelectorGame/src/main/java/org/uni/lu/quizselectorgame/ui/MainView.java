@@ -16,9 +16,9 @@ import org.uni.lu.quizselectorgame.repository.questions.QuestionRepository;
 
 @Route
 public class MainView extends VerticalLayout {
-
+    private static final Boolean READ_JSON_DATA = true;
     private final SecurityScore securityScore = new SecurityScore();
-    private final QuestionRepository questionRepository = new QuestionRepository();
+    private final QuestionRepository questionRepository = new QuestionRepository(READ_JSON_DATA);
     private final VerticalLayout questionLayout;
 
     public MainView() {
