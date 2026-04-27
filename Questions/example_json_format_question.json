@@ -4,11 +4,9 @@
     "section": "Awareness and Compliance",
     "qtype": "M",
     "qindex": 1,
-    //"maxPoints": 45,
     "answers": [
       {
         "aindex": 1,
-        //"uniqueAnswer": true,
         "score": [
           {
             //TODO come up with list of catergories we will score them on
@@ -24,7 +22,6 @@
             "min_e_count": "a",
             "max_e_count": "j",
             "sector": null,
-            //"answerChosen": true,
             "label": "Of Course."
           }
         ],
@@ -49,11 +46,9 @@
             "min_e_count": "a",
             "max_e_count": "j",
             "sector": null,
-            //"answerChosen": false,
             "label": "No, I don't trust them"
           }
-        ],
-        //"label": "orally given"
+        ]
       }
     ],
     "label": "You visit a hotel, do you connect to the WiFi?"
@@ -63,11 +58,9 @@
     "section": "Awareness and Compliance",
     "qtype": "M",
     "qindex": 2,
-    //"maxPoints": 45,
     "answers": [
       {
         "aindex": 1,
-        //"uniqueAnswer": true,
         "score": [
           {
             //TODO come up with list of catergories we will score them on
@@ -83,7 +76,6 @@
             "min_e_count": "a",
             "max_e_count": "j",
             "sector": null,
-            //"answerChosen": true,
             "label": "Of Course."
           }
         ],
@@ -108,11 +100,9 @@
             "min_e_count": "a",
             "max_e_count": "j",
             "sector": null,
-            //"answerChosen": false,
             "label": "Nope, who needs one?"
           }
-        ],
-        //"label": "orally given"
+        ]
       }
     ],
     "label": "Do you use a VPN?"
