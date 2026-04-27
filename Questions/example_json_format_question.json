@@ -1,0 +1,120 @@
+[
+  {
+    "service_category": "Rules/Charter",
+    "section": "Awareness and Compliance",
+    "qtype": "M",
+    "qindex": 1,
+    //"maxPoints": 45,
+    "answers": [
+      {
+        "aindex": 1,
+        //"uniqueAnswer": true,
+        "score": [
+          {
+            //TODO come up with list of catergories we will score them on
+            "cat_1":"+1",
+            "cat_2":"+1",
+            "cat_3":"-1",
+            "cat_4":"-2"
+          }
+        ],
+        "atype": "P",
+        "recommendations": [
+          {
+            "min_e_count": "a",
+            "max_e_count": "j",
+            "sector": null,
+            //"answerChosen": true,
+            "label": "Of Course."
+          }
+        ],
+        "label": "not described",
+        "follow_up_question_index" : 2
+      },
+      {
+        "aindex": 2,
+        "uniqueAnswer": false,
+        "score": [
+          {
+            //TODO come up with list of catergories we will score them on
+            "cat_1":"+1",
+            "cat_2":"+1",
+            "cat_3":"-1",
+            "cat_4":"-2"
+          }
+        ],
+        "atype": "P",
+        "recommendations": [
+          {
+            "min_e_count": "a",
+            "max_e_count": "j",
+            "sector": null,
+            //"answerChosen": false,
+            "label": "No, I don't trust them"
+          }
+        ],
+        //"label": "orally given"
+      }
+    ],
+    "label": "You visit a hotel, do you connect to the WiFi?"
+  },
+  {
+    "service_category": "Rules/Charter",
+    "section": "Awareness and Compliance",
+    "qtype": "M",
+    "qindex": 2,
+    //"maxPoints": 45,
+    "answers": [
+      {
+        "aindex": 1,
+        //"uniqueAnswer": true,
+        "score": [
+          {
+            //TODO come up with list of catergories we will score them on
+            "cat_1":"+1",
+            "cat_2":"+1",
+            "cat_3":"-1",
+            "cat_4":"-2"
+          }
+        ],
+        "atype": "P",
+        "recommendations": [
+          {
+            "min_e_count": "a",
+            "max_e_count": "j",
+            "sector": null,
+            //"answerChosen": true,
+            "label": "Of Course."
+          }
+        ],
+        "label": "not described",
+        "follow_up_question_index" : 2
+      },
+      {
+        "aindex": 2,
+        "uniqueAnswer": false,
+        "score": [
+          {
+            //TODO come up with list of catergories we will score them on
+            "cat_1":"+1",
+            "cat_2":"+1",
+            "cat_3":"-1",
+            "cat_4":"-2"
+          }
+        ],
+        "atype": "P",
+        "recommendations": [
+          {
+            "min_e_count": "a",
+            "max_e_count": "j",
+            "sector": null,
+            //"answerChosen": false,
+            "label": "Nope, who needs one?"
+          }
+        ],
+        //"label": "orally given"
+      }
+    ],
+    "label": "Do you use a VPN?"
+  }
+]
