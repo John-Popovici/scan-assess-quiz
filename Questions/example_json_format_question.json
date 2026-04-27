@@ -30,7 +30,6 @@
       },
       {
         "aindex": 2,
-        "uniqueAnswer": false,
         "score": [
           {
             //TODO come up with list of catergories we will score them on
