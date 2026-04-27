@@ -5,12 +5,26 @@ import org.uni.lu.quizselectorgame.enums.ScoreMovementType;
 import org.uni.lu.quizselectorgame.enums.ScoreType;
 import org.uni.lu.quizselectorgame.repository.ScoreChange;
 
+import java.io.File;
 import java.util.*;
 
 public class QuestionRepository {
     private final List<AbstractQuestion> questionList = new ArrayList<>();
 
     public QuestionRepository() {
+        this(true);
+    }
+
+    public QuestionRepository(boolean createDummyQuestion) {
+        if (createDummyQuestion) {
+            createDummyQuestions();
+        } else {
+            //read JSON data
+            File file = new File("");
+        }
+    }
+
+    private void createDummyQuestions() {
         Map<ScoreMovementType, List<ScoreType>> optionOneScoreMovementType = new HashMap<>();
         optionOneScoreMovementType.put(ScoreMovementType.INCREASE, Arrays.asList(ScoreType.PHYSICAL, ScoreType.USER));
         optionOneScoreMovementType.put(ScoreMovementType.DECREASE, List.of(ScoreType.ITEM));

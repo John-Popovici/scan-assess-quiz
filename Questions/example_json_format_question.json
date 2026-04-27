@@ -9,7 +9,7 @@
         "aindex": 1,
         "score": [
           {
-            //TODO come up with list of catergories we will score them on
+            //TODO come up with list of categories we will score them on
             "cat_1":"+1",
             "cat_2":"+1",
             "cat_3":"-1",
@@ -32,7 +32,7 @@
         "aindex": 2,
         "score": [
           {
-            //TODO come up with list of catergories we will score them on
+            //TODO come up with list of categories we will score them on
             "cat_1":"+1",
             "cat_2":"+1",
             "cat_3":"-1",
@@ -62,7 +62,7 @@
         "aindex": 1,
         "score": [
           {
-            //TODO come up with list of catergories we will score them on
+            //TODO come up with list of categories we will score them on
             "cat_1":"+1",
             "cat_2":"+1",
             "cat_3":"-1",
@@ -86,7 +86,7 @@
         "uniqueAnswer": false,
         "score": [
           {
-            //TODO come up with list of catergories we will score them on
+            //TODO come up with list of categories we will score them on
             "cat_1":"+1",
             "cat_2":"+1",
             "cat_3":"-1",
