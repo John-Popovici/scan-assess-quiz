@@ -60,8 +60,8 @@ public class QuestionRepository {
         Map<ScoreMovementAmount, List<ScoreType>> optionOneScoreMovementType = new HashMap<>();
         ScoreMovementAmount scoreMovementAmount = new ScoreMovementAmount(ScoreMovementType.INCREASE, 2);
         ScoreMovementAmount scoreMovementAmountDecrease = new ScoreMovementAmount(ScoreMovementType.DECREASE, 1);
-        optionOneScoreMovementType.put(scoreMovementAmount, Arrays.asList(ScoreType.PHYSICAL, ScoreType.USER));
-        optionOneScoreMovementType.put(scoreMovementAmountDecrease, List.of(ScoreType.ITEM));
+        optionOneScoreMovementType.put(scoreMovementAmount, Arrays.asList(ScoreType.LOGICAL_ACCESS, ScoreType.EMPLOYEE_MANAGEMENT));
+        optionOneScoreMovementType.put(scoreMovementAmountDecrease, List.of(ScoreType.AWARENESS_AND_COMPLIANCE));
         ScoreChange optionOneScoreChange = new ScoreChange(QuestionOption.OPTION_ONE, optionOneScoreMovementType);
         AbstractQuestion hotelConnectQuestion = new ComputerQuestion(
                 "You go to a hotel, do you connect to the WiFi?",
@@ -71,7 +71,7 @@ public class QuestionRepository {
                 new ScoreChange(QuestionOption.OPTION_TWO, new HashMap<>()));
 
         Map<ScoreMovementAmount, List<ScoreType>> optionTwoScoreMovementType = new HashMap<>();
-        optionTwoScoreMovementType.put(scoreMovementAmountDecrease, Arrays.asList(ScoreType.PHYSICAL, ScoreType.USER));
+        optionTwoScoreMovementType.put(scoreMovementAmountDecrease, Arrays.asList(ScoreType.LOGICAL_ACCESS, ScoreType.EMPLOYEE_MANAGEMENT));
         ScoreChange optionTwoScoreChange = new ScoreChange(QuestionOption.OPTION_TWO, optionTwoScoreMovementType);
         hotelConnectQuestion.setFollowUpQuestionOptionTwo(new ComputerQuestion(
                 "Are you using a VPN?",

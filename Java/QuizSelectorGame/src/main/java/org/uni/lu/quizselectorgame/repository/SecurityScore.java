@@ -19,10 +19,18 @@ public class SecurityScore {
     }
 
     public void increaseScore(ScoreType scoreType, int value) {
-        scoreTypeValues.put(scoreType, (scoreTypeValues.get(scoreType) + value));
+        int newValue = (scoreTypeValues.get(scoreType) + value);
+        if (newValue > 100) {
+            newValue = 100;
+        }
+        scoreTypeValues.put(scoreType, newValue);
     }
 
     public void decreaseScore(ScoreType scoreType, int value) {
-        scoreTypeValues.put(scoreType, (scoreTypeValues.get(scoreType) - value));
+        int newValue = (scoreTypeValues.get(scoreType) - value);
+        if (newValue < 0) {
+            newValue = 0;
+        }
+        scoreTypeValues.put(scoreType, newValue);
     }
 }

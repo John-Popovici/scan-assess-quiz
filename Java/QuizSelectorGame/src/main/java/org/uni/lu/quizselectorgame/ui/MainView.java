@@ -45,25 +45,45 @@ public class MainView extends VerticalLayout {
     private HorizontalLayout getProgressBarLayout(ScoreType scoreType) {
         ProgressBar progressBar = new ProgressBar(0, 100, securityScore.getScore(scoreType));
         progressBar.setWidthFull();
-        LumoIcon icon;
+        Icon icon;
         switch (scoreType) {
-            case USER -> icon = LumoIcon.USER;
-            case PHYSICAL -> {
-                icon = LumoIcon.COG;
+            case EMPLOYEE_MANAGEMENT -> {
+                icon = LumoIcon.USER.create();
+                icon.setColor("blue");
+            }
+            case LOGICAL_ACCESS -> {
+                icon = LumoIcon.COG.create();
+                icon.setColor("yellow");
                 progressBar.getStyle().set("--vaadin-progress-bar-value-background", "yellow");
             }
-            case ITEM -> {
-                icon = LumoIcon.BELL;
+            case AWARENESS_AND_COMPLIANCE -> {
+                icon = LumoIcon.BELL.create();
+                icon.setColor("orange");
                 progressBar.getStyle().set("--vaadin-progress-bar-value-background", "orange");
             }
-            case OTHER -> {
-                icon = LumoIcon.BAR_CHART;
+            case INFORMATION_SYSTEM -> {
+                icon = LumoIcon.PHONE.create();
+                icon.setColor("purple");
                 progressBar.getStyle().set("--vaadin-progress-bar-value-background", "purple");
             }
-            default -> icon = LumoIcon.ERROR;
+            case LOCAL_AREA_NETWORK -> {
+                icon = LumoIcon.PLAY.create();
+                icon.setColor("green");
+                progressBar.getStyle().set("--vaadin-progress-bar-value-background", "green");
+            }
+            case THIRD_PARTY_MANAGEMENT -> {
+                icon = LumoIcon.SEARCH.create();
+                icon.setColor("gray");
+                progressBar.getStyle().set("--vaadin-progress-bar-value-background", "gray");
+            }
+            default -> {
+                icon = LumoIcon.ERROR.create();
+                icon.setColor("red");
+                progressBar.getStyle().set("--vaadin-progress-bar-value-background", "red");
+            }
         }
-        Icon catOneIcon = icon.create();
-        HorizontalLayout horizontalLayout = new HorizontalLayout(catOneIcon, progressBar);
+        icon.setTooltipText(scoreType.name());
+        HorizontalLayout horizontalLayout = new HorizontalLayout(icon, progressBar);
         horizontalLayout.setAlignItems(Alignment.CENTER);
         horizontalLayout.setWidthFull();
         scoreTypeProgressBarMap.put(scoreType, progressBar);
