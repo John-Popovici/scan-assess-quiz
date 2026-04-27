@@ -29,3 +29,11 @@ Works using Springboot and Vaadin, creates a simple website, that uses localhost
 Questions are stored in the questions folder as JSON entries 
 ### Prerequisites
 Java 25
+Maven tool, for building project and adding dependencies
+
+### Run
+
+mvn clean install on QuizSelectorGame
+And then run QuizSelectorGameApplication
+Will be compiled into a WAR later
+
