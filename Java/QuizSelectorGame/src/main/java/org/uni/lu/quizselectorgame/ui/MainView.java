@@ -2,6 +2,7 @@ package org.uni.lu.quizselectorgame.ui;
 
 import com.vaadin.flow.component.ClickEvent;
 import com.vaadin.flow.component.ComponentEventListener;
+import com.vaadin.flow.component.Key;
 import com.vaadin.flow.component.Text;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.card.Card;
@@ -40,7 +41,9 @@ public class MainView extends VerticalLayout {
         Card rightCard = new Card();
 
         Button leftButton = new Button("<-", (ComponentEventListener<ClickEvent<Button>>) _ -> choseOptionOne(question));
+        leftButton.addClickShortcut(Key.ARROW_LEFT);
         Button rightButton = new Button("->", (ComponentEventListener<ClickEvent<Button>>) _ -> choseOptionTwo(question));
+        rightButton.addClickShortcut(Key.ARROW_RIGHT);
 
         leftCard.setTitle(question.getOptionOne());
         leftCard.add(leftButton);
