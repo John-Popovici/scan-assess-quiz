@@ -1,63 +1,25 @@
-# winventory-rs
+# Enumeros
 
-`winventory-rs` is a small Rust-based Windows asset inventory tool for defensive security assessment.
+Enumeros is a small Rust-based local assessment helper for collecting basic host, browser, and local network information.
 
-It collects basic local host metadata and prints it as JSON:
+It is intended to support environment-aware cybersecurity questionnaires and risk-assessment workflows.
 
-- hostname
-- Windows product name
-- Windows display version / release ID
-- Windows build number
-- installed browser versions for Chrome, Edge, and Firefox where available
+## Features
 
-## Purpose
+- Detects host OS, OS version, and kernel version
+- Detects installed browser versions where available
+- Compares selected software versions against latest-version sources
+- Performs low-impact local subnet TCP connect checks against a small set of common ports
+- Emits structured JSON output for downstream tools
 
-The tool is designed for small-scale defensive security assessment and lab work. It provides a lightweight way to collect basic OS and browser version information from a Windows host without installing an agent or collecting sensitive user data.
+## Prerequisites
 
-This kind of inventory is useful for:
+- Rust toolchain
+- No `nmap` dependency
 
-- identifying outdated operating system builds
-- identifying outdated browser versions
-- basic asset visibility
-- small-organisation security reviews
-- lab exercises around local enumeration and defensive telemetry
+Enumeros does not require `nmap`. Network discovery uses TCP connect checks from the Rust program itself.
 
-## Privacy and Scope
+## Build
 
-This tool does **not** collect:
-
-- credentials
-- documents
-- browser history
-- cookies
-- saved passwords
-- network traffic
-- personal files
-
-It only queries local OS and browser version metadata.
-
-## How It Works
-
-The tool uses standard Windows mechanisms:
-
-- `reg query` for registry-based version information
-- PowerShell `Get-Item` for executable product versions when registry values are unavailable
-- Rust `std::process::Command` to invoke local system commands
-- JSON output for downstream processing
-
-## Example Output
-
-```json
-{
-  "hostname": "DESKTOP-EXAMPLE",
-  "os": {
-    "product_name": "Windows 11 Pro",
-    "display_version": "23H2",
-    "build": "22631"
-  },
-  "browsers": {
-    "chrome": "124.0.6367.91",
-    "edge": "124.0.2478.67",
-    "firefox": null
-  }
-}
+```bash
+cargo build --release
