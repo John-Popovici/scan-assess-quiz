@@ -6,6 +6,7 @@ import org.uni.lu.quizselectorgame.enums.QuestionOption;
 import org.uni.lu.quizselectorgame.enums.ScoreMovementType;
 import org.uni.lu.quizselectorgame.enums.ScoreType;
 import org.uni.lu.quizselectorgame.repository.ScoreChange;
+import org.uni.lu.quizselectorgame.repository.answers.ScoreMovementAmount;
 
 import java.io.File;
 import java.io.IOException;
@@ -56,9 +57,11 @@ public class QuestionRepository {
     }
 
     private void createDummyQuestions() {
-        Map<ScoreMovementType, List<ScoreType>> optionOneScoreMovementType = new HashMap<>();
-        optionOneScoreMovementType.put(ScoreMovementType.INCREASE, Arrays.asList(ScoreType.PHYSICAL, ScoreType.USER));
-        optionOneScoreMovementType.put(ScoreMovementType.DECREASE, List.of(ScoreType.ITEM));
+        Map<ScoreMovementAmount, List<ScoreType>> optionOneScoreMovementType = new HashMap<>();
+        ScoreMovementAmount scoreMovementAmount = new ScoreMovementAmount(ScoreMovementType.INCREASE, 2);
+        ScoreMovementAmount scoreMovementAmountDecrease = new ScoreMovementAmount(ScoreMovementType.DECREASE, 1);
+        optionOneScoreMovementType.put(scoreMovementAmount, Arrays.asList(ScoreType.PHYSICAL, ScoreType.USER));
+        optionOneScoreMovementType.put(scoreMovementAmountDecrease, List.of(ScoreType.ITEM));
         ScoreChange optionOneScoreChange = new ScoreChange(QuestionOption.OPTION_ONE, optionOneScoreMovementType);
         AbstractQuestion hotelConnectQuestion = new ComputerQuestion(
                 "You go to a hotel, do you connect to the WiFi?",
@@ -67,8 +70,8 @@ public class QuestionRepository {
                 optionOneScoreChange,
                 new ScoreChange(QuestionOption.OPTION_TWO, new HashMap<>()));
 
-        Map<ScoreMovementType, List<ScoreType>> optionTwoScoreMovementType = new HashMap<>();
-        optionTwoScoreMovementType.put(ScoreMovementType.DECREASE, Arrays.asList(ScoreType.PHYSICAL, ScoreType.USER));
+        Map<ScoreMovementAmount, List<ScoreType>> optionTwoScoreMovementType = new HashMap<>();
+        optionTwoScoreMovementType.put(scoreMovementAmountDecrease, Arrays.asList(ScoreType.PHYSICAL, ScoreType.USER));
         ScoreChange optionTwoScoreChange = new ScoreChange(QuestionOption.OPTION_TWO, optionTwoScoreMovementType);
         hotelConnectQuestion.setFollowUpQuestionOptionTwo(new ComputerQuestion(
                 "Are you using a VPN?",
