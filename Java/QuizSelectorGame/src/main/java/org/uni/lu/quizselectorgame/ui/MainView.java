@@ -13,7 +13,7 @@ import com.vaadin.flow.theme.lumo.LumoIcon;
 import org.uni.lu.quizselectorgame.enums.ScoreType;
 import org.uni.lu.quizselectorgame.repository.ScoreChange;
 import org.uni.lu.quizselectorgame.repository.SecurityScore;
-import org.uni.lu.quizselectorgame.repository.questions.AbstractQuestion;
+import org.uni.lu.quizselectorgame.repository.questions.Question;
 import org.uni.lu.quizselectorgame.repository.questions.QuestionRepository;
 
 import java.util.Arrays;
@@ -22,7 +22,7 @@ import java.util.Map;
 
 @Route
 public class MainView extends VerticalLayout {
-    private static final Boolean READ_JSON_DATA = true;
+    private static final Boolean READ_JSON_DATA = false;
     private final Map<ScoreType, ProgressBar> scoreTypeProgressBarMap = new HashMap<>();
     private final SecurityScore securityScore = new SecurityScore();
     private final QuestionRepository questionRepository = new QuestionRepository(READ_JSON_DATA);
@@ -90,7 +90,7 @@ public class MainView extends VerticalLayout {
         return horizontalLayout;
     }
 
-    private void addQuestion(AbstractQuestion question) {
+    private void addQuestion(Question question) {
         questionLayout.removeAll();
         questionLayout.setAlignItems(Alignment.CENTER);
         questionLayout.add(new Text(question.getQuestion()));
@@ -112,7 +112,7 @@ public class MainView extends VerticalLayout {
     }
 
 
-    private void choseOptionOne(AbstractQuestion question) {
+    private void choseOptionOne(Question question) {
         ScoreChange scoreChange = question.getOptionOneScoreChange();
         updateScores(scoreChange);
         if (question.hasFollowUpForOptionOne()) {
@@ -120,7 +120,7 @@ public class MainView extends VerticalLayout {
         }
     }
 
-    private void choseOptionTwo(AbstractQuestion question) {
+    private void choseOptionTwo(Question question) {
         ScoreChange scoreChange = question.getOptionTwoScoreChange();
         updateScores(scoreChange);
         if (question.hasFollowUpForOptionTwo()) {

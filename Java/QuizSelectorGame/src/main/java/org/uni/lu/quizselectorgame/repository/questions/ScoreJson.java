@@ -1,40 +1,59 @@
 package org.uni.lu.quizselectorgame.repository.questions;
 
 public class ScoreJson {
-    private String cat1;
-    private String cat2;
-    private String cat3;
-    private String cat4;
 
-    public String getCat1() {
-        return cat1;
+    private String EMPLOYEE_MANAGEMENT;
+    private String LOGICAL_ACCESS;
+    private String AWARENESS_AND_COMPLIANCE;
+    private String INFORMATION_SYSTEM;
+    private String LOCAL_AREA_NETWORK;
+    private String THIRD_PARTY_MANAGEMENT;
+
+    public String getEMPLOYEE_MANAGEMENT() {
+        return EMPLOYEE_MANAGEMENT;
     }
 
-    public void setCat1(String cat1) {
-        this.cat1 = cat1;
+    public void setEMPLOYEE_MANAGEMENT(String EMPLOYEE_MANAGEMENT) {
+        this.EMPLOYEE_MANAGEMENT = EMPLOYEE_MANAGEMENT;
     }
 
-    public String getCat2() {
-        return cat2;
+    public String getLOGICAL_ACCESS() {
+        return LOGICAL_ACCESS;
     }
 
-    public void setCat2(String cat2) {
-        this.cat2 = cat2;
+    public void setLOGICAL_ACCESS(String LOGICAL_ACCESS) {
+        this.LOGICAL_ACCESS = LOGICAL_ACCESS;
     }
 
-    public String getCat3() {
-        return cat3;
+    public String getAWARENESS_AND_COMPLIANCE() {
+        return AWARENESS_AND_COMPLIANCE;
     }
 
-    public void setCat3(String cat3) {
-        this.cat3 = cat3;
+    public void setAWARENESS_AND_COMPLIANCE(String AWARENESS_AND_COMPLIANCE) {
+        this.AWARENESS_AND_COMPLIANCE = AWARENESS_AND_COMPLIANCE;
     }
 
-    public String getCat4() {
-        return cat4;
+    public String getINFORMATION_SYSTEM() {
+        return INFORMATION_SYSTEM;
     }
 
-    public void setCat4(String cat4) {
-        this.cat4 = cat4;
+    public void setINFORMATION_SYSTEM(String INFORMATION_SYSTEM) {
+        this.INFORMATION_SYSTEM = INFORMATION_SYSTEM;
+    }
+
+    public String getLOCAL_AREA_NETWORK() {
+        return LOCAL_AREA_NETWORK;
+    }
+
+    public void setLOCAL_AREA_NETWORK(String LOCAL_AREA_NETWORK) {
+        this.LOCAL_AREA_NETWORK = LOCAL_AREA_NETWORK;
+    }
+
+    public String getTHIRD_PARTY_MANAGEMENT() {
+        return THIRD_PARTY_MANAGEMENT;
+    }
+
+    public void setTHIRD_PARTY_MANAGEMENT(String THIRD_PARTY_MANAGEMENT) {
+        this.THIRD_PARTY_MANAGEMENT = THIRD_PARTY_MANAGEMENT;
     }
 }

@@ -5,16 +5,16 @@ import org.uni.lu.quizselectorgame.repository.ScoreChange;
 
 import java.util.HashMap;
 
-public abstract class AbstractQuestion {
+public class Question {
     private final String question;
     private final String optionOne;
     private final String optionTwo;
     private final ScoreChange optionOneScoreChange;
     private final ScoreChange optionTwoScoreChange;
-    private AbstractQuestion followUpQuestionOptionOne;
-    private AbstractQuestion followUpQuestionOptionTwo;
+    private Question followUpQuestionOptionOne;
+    private Question followUpQuestionOptionTwo;
 
-    public AbstractQuestion(String question, String optionOne, String optionTwo, ScoreChange optionOneScoreChange, ScoreChange optionTwoScoreChange) {
+    public Question(String question, String optionOne, String optionTwo, ScoreChange optionOneScoreChange, ScoreChange optionTwoScoreChange) {
         this.question = question;
         this.optionOne = optionOne;
         this.optionTwo = optionTwo;
@@ -22,7 +22,7 @@ public abstract class AbstractQuestion {
         this.optionTwoScoreChange = optionTwoScoreChange;
     }
 
-    public AbstractQuestion(String question, String optionOne, String optionTwo) {
+    public Question(String question, String optionOne, String optionTwo) {
         this.question = question;
         this.optionOne = optionOne;
         this.optionTwo = optionTwo;
@@ -50,19 +50,19 @@ public abstract class AbstractQuestion {
         return optionTwoScoreChange;
     }
 
-    public AbstractQuestion getFollowUpQuestionOptionOne() {
+    public Question getFollowUpQuestionOptionOne() {
         return followUpQuestionOptionOne;
     }
 
-    public void setFollowUpQuestionOptionOne(AbstractQuestion followUpQuestionOptionOne) {
+    public void setFollowUpQuestionOptionOne(Question followUpQuestionOptionOne) {
         this.followUpQuestionOptionOne = followUpQuestionOptionOne;
     }
 
-    public AbstractQuestion getFollowUpQuestionOptionTwo() {
+    public Question getFollowUpQuestionOptionTwo() {
         return followUpQuestionOptionTwo;
     }
 
-    public void setFollowUpQuestionOptionTwo(AbstractQuestion followUpQuestionOptionTwo) {
+    public void setFollowUpQuestionOptionTwo(Question followUpQuestionOptionTwo) {
         this.followUpQuestionOptionTwo = followUpQuestionOptionTwo;
     }
 

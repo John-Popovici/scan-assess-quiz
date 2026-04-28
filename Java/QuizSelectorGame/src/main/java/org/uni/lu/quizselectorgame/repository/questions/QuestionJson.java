@@ -1,51 +1,28 @@
 package org.uni.lu.quizselectorgame.repository.questions;
 
+import java.util.List;
+
 public class QuestionJson {
-    private String serviceCategory;
-    private String section;
-    private String qType;
     private Integer qIndex;
-    private AnswerJson answer;
+    private Integer treeIndex;
     private String label;
+    private List<AnswerJson> answer;
+    private List<Condition> conditions;
 
-    public String getServiceCategory() {
-        return serviceCategory;
-    }
-
-    public void setServiceCategory(String serviceCategory) {
-        this.serviceCategory = serviceCategory;
-    }
-
-    public String getSection() {
-        return section;
-    }
-
-    public void setSection(String section) {
-        this.section = section;
-    }
-
-    public String getQType() {
-        return qType;
-    }
-
-    public void setQType(String qType) {
-        this.qType = qType;
-    }
-
-    public Integer getQIndex() {
+    public Integer getqIndex() {
         return qIndex;
     }
 
-    public void setQIndex(Integer qIndex) {
+    public void setqIndex(Integer qIndex) {
         this.qIndex = qIndex;
     }
 
-    public AnswerJson getAnswer() {
-        return answer;
+    public Integer getTreeIndex() {
+        return treeIndex;
     }
 
-    public void setAnswer(AnswerJson answer) {
-        this.answer = answer;
+    public void setTreeIndex(Integer treeIndex) {
+        this.treeIndex = treeIndex;
     }
 
     public String getLabel() {
@@ -54,5 +31,21 @@ public class QuestionJson {
 
     public void setLabel(String label) {
         this.label = label;
+    }
+
+    public List<AnswerJson> getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(List<AnswerJson> answer) {
+        this.answer = answer;
+    }
+
+    public List<Condition> getConditions() {
+        return conditions;
+    }
+
+    public void setConditions(List<Condition> conditions) {
+        this.conditions = conditions;
     }
 }

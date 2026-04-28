@@ -19,7 +19,7 @@ import java.util.logging.Logger;
 public class QuestionRepository {
 
     private final Logger logger = Logger.getLogger(QuestionRepository.class.getName());
-    private final List<AbstractQuestion> questionList = new ArrayList<>();
+    private final List<Question> questionList = new ArrayList<>();
 
     public QuestionRepository() {
         this(true);
@@ -41,8 +41,16 @@ public class QuestionRepository {
                             Gson gson = new Gson();
                             Type listType = new TypeToken<List<QuestionJson>>() {
                             }.getType();
-                            QuestionJson questionJson = gson.fromJson(jsonRead, listType);
-                            //Convert json into a question
+                            List<QuestionJson> questionJsons = gson.fromJson(jsonRead, listType);
+
+                            questionJsons.forEach(qj -> {
+                                if (qj.getAnswer() != null && qj.getAnswer().size() == 2) {
+                                    Question question = new Question(qj.getLabel(), qj.getAnswer().getFirst().getLabel(), qj.getAnswer().getLast().getLabel());
+                                    questionList.add(question);
+                                } else {
+                                    logger.log(Level.SEVERE, qj.getqIndex() + " is an invalid question");
+                                }
+                            });
                             jsonDataRead = true;
                         } catch (IOException e) {
                             logger.log(Level.WARNING, e.getMessage());
@@ -50,7 +58,7 @@ public class QuestionRepository {
                     }
                 }
             }
-            if (!jsonDataRead) {
+            if (!jsonDataRead || questionList.isEmpty()) {
                 createDummyQuestions();
             }
         }
@@ -63,7 +71,7 @@ public class QuestionRepository {
         optionOneScoreMovementType.put(scoreMovementAmount, Arrays.asList(ScoreType.LOGICAL_ACCESS, ScoreType.EMPLOYEE_MANAGEMENT));
         optionOneScoreMovementType.put(scoreMovementAmountDecrease, List.of(ScoreType.AWARENESS_AND_COMPLIANCE));
         ScoreChange optionOneScoreChange = new ScoreChange(QuestionOption.OPTION_ONE, optionOneScoreMovementType);
-        AbstractQuestion hotelConnectQuestion = new ComputerQuestion(
+        Question hotelConnectQuestion = new Question(
                 "You go to a hotel, do you connect to the WiFi?",
                 "No, I don't trust them",
                 "Yes, I see no issue",
@@ -73,7 +81,7 @@ public class QuestionRepository {
         Map<ScoreMovementAmount, List<ScoreType>> optionTwoScoreMovementType = new HashMap<>();
         optionTwoScoreMovementType.put(scoreMovementAmountDecrease, Arrays.asList(ScoreType.LOGICAL_ACCESS, ScoreType.EMPLOYEE_MANAGEMENT));
         ScoreChange optionTwoScoreChange = new ScoreChange(QuestionOption.OPTION_TWO, optionTwoScoreMovementType);
-        hotelConnectQuestion.setFollowUpQuestionOptionTwo(new ComputerQuestion(
+        hotelConnectQuestion.setFollowUpQuestionOptionTwo(new Question(
                 "Are you using a VPN?",
                 "Yes",
                 "No",
@@ -83,7 +91,7 @@ public class QuestionRepository {
         questionList.add(hotelConnectQuestion);
     }
 
-    public AbstractQuestion getQuestionAtIndex(int index) {
+    public Question getQuestionAtIndex(int index) {
         return questionList.get(index);
     }
 }
