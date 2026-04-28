@@ -1,8 +1,17 @@
 package org.uni.lu.quizselectorgame.repository.questions;
 
 public class Condition {
+    private Integer treeIndex;
     private Integer qIndex;
     private Integer aType;
+
+    public Integer getTreeIndex() {
+        return treeIndex;
+    }
+
+    public void setTreeIndex(Integer treeIndex) {
+        this.treeIndex = treeIndex;
+    }
 
     public Integer getqIndex() {
         return qIndex;

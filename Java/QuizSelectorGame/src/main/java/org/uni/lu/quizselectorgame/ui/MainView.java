@@ -22,10 +22,10 @@ import java.util.Map;
 
 @Route
 public class MainView extends VerticalLayout {
-    private static final Boolean READ_JSON_DATA = true;
+    private static final Boolean USE_DUMMY_QUESTIONS = false;
     private final Map<ScoreType, ProgressBar> scoreTypeProgressBarMap = new HashMap<>();
     private final SecurityScore securityScore = new SecurityScore();
-    private final QuestionRepository questionRepository = new QuestionRepository(READ_JSON_DATA);
+    private final QuestionRepository questionRepository = new QuestionRepository(USE_DUMMY_QUESTIONS);
     private final VerticalLayout questionLayout;
 
     public MainView() {
@@ -33,7 +33,7 @@ public class MainView extends VerticalLayout {
         add(getSecurityScoreLayout());
         questionLayout = new VerticalLayout();
         add(questionLayout);
-        addQuestion(questionRepository.getQuestionAtIndex(0));
+        addQuestion(questionRepository.getNextAndPopQuestion());
     }
 
     private VerticalLayout getSecurityScoreLayout() {
@@ -115,16 +115,42 @@ public class MainView extends VerticalLayout {
     private void choseOptionOne(Question question) {
         ScoreChange scoreChange = question.getOptionOneScoreChange();
         updateScores(scoreChange);
+        questionRepository.updateAnswerGiven(question, 1);
         if (question.hasFollowUpForOptionOne()) {
-            addQuestion(question.getFollowUpQuestionOptionOne());
+            Question newQuestion = questionRepository.getQuestionWithIdAndTreeIdAndPop(question.getTreeId(), question.getFollowUpQuestionOptionOne());
+            if (newQuestion != null) {
+                addQuestion(newQuestion);
+                return;
+            }
+        }
+        Question nextQuestion = questionRepository.getNextAndPopQuestion();
+        if (nextQuestion != null) {
+            addQuestion(nextQuestion);
+        } else {
+            Dialog endOfQuiz = new Dialog("End of quiz!");
+            endOfQuiz.setModality(ModalityMode.MODELESS);
+            endOfQuiz.open();
         }
     }
 
     private void choseOptionTwo(Question question) {
         ScoreChange scoreChange = question.getOptionTwoScoreChange();
         updateScores(scoreChange);
+        questionRepository.updateAnswerGiven(question, 2);
         if (question.hasFollowUpForOptionTwo()) {
-            addQuestion(question.getFollowUpQuestionOptionTwo());
+            Question newQuestion = questionRepository.getQuestionWithIdAndTreeIdAndPop(question.getTreeId(), question.getFollowUpQuestionOptionTwo());
+            if (newQuestion != null) {
+                addQuestion(newQuestion);
+                return;
+            }
+        }
+        Question nextQuestion = questionRepository.getNextAndPopQuestion();
+        if (nextQuestion != null) {
+            addQuestion(nextQuestion);
+        } else {
+            Dialog endOfQuiz = new Dialog("End of quiz!");
+            endOfQuiz.setModality(ModalityMode.MODELESS);
+            endOfQuiz.open();
         }
     }
 
@@ -145,7 +171,6 @@ public class MainView extends VerticalLayout {
                     securityScore.increaseScore(scoreType, k.getAmount());
                     scoreTypeProgressBarMap.get(scoreType).setValue(securityScore.getScore(scoreType));
                 });
-
             }
         });
     }
