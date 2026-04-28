@@ -6,6 +6,7 @@
     "answers": [
       {
         "aIndex": 1,
+        "label": "Yes",
         "score": [
           {
             "EMPLOYEE_MANAGEMENT": "+1",
@@ -17,7 +18,6 @@
           }
         ],
         "recommendations": "This is the text to recommend",
-        "label": "Yes",
         "follow_up_question_index": 2
       },
       {
@@ -54,6 +54,7 @@
     "answers": [
       {
         "aIndex": 1,
+        "label": "Yes",
         "score": [
           {
             "EMPLOYEE_MANAGEMENT": "+1",
@@ -64,8 +65,7 @@
             "THIRD_PARTY_MANAGEMENT": "0"
           }
         ],
-        "recommendations": "",
-        "label": "Yes"
+        "recommendations": ""
       },
       {
         "aIndex": 2,
