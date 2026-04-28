@@ -39,6 +39,7 @@
     "label": "Do you use a VPN?",
     "conditions": [
       {
+        "treeIndex": 1,
         "qIndex": 1,
         "aType": 1
       }
