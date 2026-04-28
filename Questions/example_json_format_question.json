@@ -1,6 +1,5 @@
 [
   {
-    "service_category": "Rules/Charter",
     "qIndex": 1,
     "treeIndex": 1,
     "label": "You visit a hotel, do you connect to the WiFi?",
@@ -39,7 +38,6 @@
     ]
   },
   {
-    "service_category": "Rules/Charter",
     "qIndex": 2,
     "treeIndex": 1,
     "label": "Do you use a VPN?",
