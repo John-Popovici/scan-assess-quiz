@@ -9,8 +9,8 @@ public class Question {
     private final String question;
     private final String optionOne;
     private final String optionTwo;
-    private final ScoreChange optionOneScoreChange;
-    private final ScoreChange optionTwoScoreChange;
+    private ScoreChange optionOneScoreChange;
+    private ScoreChange optionTwoScoreChange;
     private Question followUpQuestionOptionOne;
     private Question followUpQuestionOptionTwo;
 
@@ -46,8 +46,16 @@ public class Question {
         return optionOneScoreChange;
     }
 
+    public void setOptionOneScoreChange(ScoreChange optionOneScoreChange) {
+        this.optionOneScoreChange = optionOneScoreChange;
+    }
+
     public ScoreChange getOptionTwoScoreChange() {
         return optionTwoScoreChange;
+    }
+
+    public void setOptionTwoScoreChange(ScoreChange optionTwoScoreChange) {
+        this.optionTwoScoreChange = optionTwoScoreChange;
     }
 
     public Question getFollowUpQuestionOptionOne() {

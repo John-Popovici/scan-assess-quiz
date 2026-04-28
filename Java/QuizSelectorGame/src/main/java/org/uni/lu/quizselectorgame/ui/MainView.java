@@ -22,7 +22,7 @@ import java.util.Map;
 
 @Route
 public class MainView extends VerticalLayout {
-    private static final Boolean READ_JSON_DATA = false;
+    private static final Boolean READ_JSON_DATA = true;
     private final Map<ScoreType, ProgressBar> scoreTypeProgressBarMap = new HashMap<>();
     private final SecurityScore securityScore = new SecurityScore();
     private final QuestionRepository questionRepository = new QuestionRepository(READ_JSON_DATA);

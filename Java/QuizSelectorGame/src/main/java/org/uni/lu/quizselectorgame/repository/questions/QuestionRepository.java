@@ -2,6 +2,7 @@ package org.uni.lu.quizselectorgame.repository.questions;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import jakarta.annotation.Nullable;
 import org.uni.lu.quizselectorgame.enums.QuestionOption;
 import org.uni.lu.quizselectorgame.enums.ScoreMovementType;
 import org.uni.lu.quizselectorgame.enums.ScoreType;
@@ -45,7 +46,36 @@ public class QuestionRepository {
 
                             questionJsons.forEach(qj -> {
                                 if (qj.getAnswers() != null && qj.getAnswers().size() == 2) {
-                                    Question question = new Question(qj.getLabel(), qj.getAnswers().getFirst().getLabel(), qj.getAnswers().getLast().getLabel());
+                                    AnswerJson answerOneJson = qj.getAnswers().getFirst();
+                                    AnswerJson answerTwoJson = qj.getAnswers().getLast();
+                                    Question question = new Question(qj.getLabel(), answerOneJson.getLabel(), answerTwoJson.getLabel());
+                                    if (answerOneJson.getScore() != null) {
+                                        Map<ScoreMovementAmount, List<ScoreType>> scoreMovementAmountListMap = new HashMap<>();
+                                        ScoreMovementAmount scoreMovementAmountAware = parseScoreValue(answerOneJson.getScore().getAWARENESS_AND_COMPLIANCE());
+                                        if (scoreMovementAmountAware != null) {
+                                            scoreMovementAmountListMap.putIfAbsent(scoreMovementAmountAware, new ArrayList<>());
+                                            scoreMovementAmountListMap.get(scoreMovementAmountAware).add(ScoreType.AWARENESS_AND_COMPLIANCE);
+                                        }
+
+                                        ScoreMovementAmount scoreMovementAmountEmp = parseScoreValue(answerOneJson.getScore().getEMPLOYEE_MANAGEMENT());
+                                        if (scoreMovementAmountEmp != null) {
+                                            scoreMovementAmountListMap.putIfAbsent(scoreMovementAmountEmp, new ArrayList<>());
+                                            scoreMovementAmountListMap.get(scoreMovementAmountEmp).add(ScoreType.EMPLOYEE_MANAGEMENT);
+                                        }
+
+
+
+                                        /*answerOneJson.getScore().
+                                        scoreMovementAmountListMap.
+                                        ScoreChange scoreChange = new ScoreChange(QuestionOption.OPTION_ONE, );
+                                        question.setOptionOneScoreChange();*/
+                                    }
+
+
+
+
+
+
                                     questionList.add(question);
                                 } else {
                                     logger.log(Level.SEVERE, qj.getqIndex() + " is an invalid question");
@@ -62,6 +92,24 @@ public class QuestionRepository {
                 createDummyQuestions();
             }
         }
+    }
+
+    @Nullable
+    private ScoreMovementAmount parseScoreValue(String value) {
+        ScoreMovementType scoreMovementType;
+        if (value.contains("-")) {
+            scoreMovementType = ScoreMovementType.DECREASE;
+            value = value.replace("-", "");
+        } else {
+            scoreMovementType = ScoreMovementType.INCREASE;
+            value = value.replace("+", "");
+        }
+        try {
+            return new ScoreMovementAmount(scoreMovementType, Integer.parseInt(value));
+        } catch (Exception e) {
+            logger.log(Level.FINE, "Error parsing string " + value);
+        }
+        return null;
     }
 
     private void createDummyQuestions() {
