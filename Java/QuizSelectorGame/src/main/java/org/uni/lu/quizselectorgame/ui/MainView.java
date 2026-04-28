@@ -8,6 +8,7 @@ import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.progressbar.ProgressBar;
+import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.theme.lumo.LumoIcon;
 import org.uni.lu.quizselectorgame.enums.ScoreType;
@@ -44,48 +45,57 @@ public class MainView extends VerticalLayout {
 
     private HorizontalLayout getProgressBarLayout(ScoreType scoreType) {
         ProgressBar progressBar = new ProgressBar(0, 100, securityScore.getScore(scoreType));
-        progressBar.setWidthFull();
+        progressBar.setWidth("250px");
+        progressBar.getStyle().set("height", "12px");
         Icon icon;
+        String color;
+
         switch (scoreType) {
             case EMPLOYEE_MANAGEMENT -> {
                 icon = LumoIcon.USER.create();
-                icon.setColor("blue");
+                color = "#3b82f6";
             }
             case LOGICAL_ACCESS -> {
                 icon = LumoIcon.COG.create();
-                icon.setColor("yellow");
-                progressBar.getStyle().set("--vaadin-progress-bar-value-background", "yellow");
+                color = "#10b981";
             }
             case AWARENESS_AND_COMPLIANCE -> {
                 icon = LumoIcon.BELL.create();
-                icon.setColor("orange");
-                progressBar.getStyle().set("--vaadin-progress-bar-value-background", "orange");
+                color = "#f59e0b";
             }
             case INFORMATION_SYSTEM -> {
                 icon = LumoIcon.PHONE.create();
-                icon.setColor("purple");
-                progressBar.getStyle().set("--vaadin-progress-bar-value-background", "purple");
+                color = "#8b5cf6";
             }
             case LOCAL_AREA_NETWORK -> {
                 icon = LumoIcon.PLAY.create();
-                icon.setColor("green");
-                progressBar.getStyle().set("--vaadin-progress-bar-value-background", "green");
+                color = "#06b6d4";
             }
             case THIRD_PARTY_MANAGEMENT -> {
                 icon = LumoIcon.SEARCH.create();
-                icon.setColor("gray");
-                progressBar.getStyle().set("--vaadin-progress-bar-value-background", "gray");
+                color = "#ec4899";
             }
             default -> {
                 icon = LumoIcon.ERROR.create();
-                icon.setColor("red");
-                progressBar.getStyle().set("--vaadin-progress-bar-value-background", "red");
+                color = "#64748b";
             }
         }
-        icon.setTooltipText(scoreType.name());
-        HorizontalLayout horizontalLayout = new HorizontalLayout(icon, progressBar);
-        horizontalLayout.setAlignItems(Alignment.CENTER);
+
+        icon.setColor(color);
+        // icon.setTooltipText(scoreType.name());
+        progressBar.getStyle().set("--lumo-primary-color", color);
+        progressBar.getStyle().set("--vaadin-progress-bar-value-background", color);
+
+        Span label = new Span(scoreType.name());
+        label.setWidth("250px");
+        label.getStyle().set("text-align", "right");
+
+        HorizontalLayout horizontalLayout = new HorizontalLayout(label, icon, progressBar);
+        horizontalLayout.setJustifyContentMode(JustifyContentMode.CENTER);
         horizontalLayout.setWidthFull();
+
+        horizontalLayout.setSpacing(true);
+
         scoreTypeProgressBarMap.put(scoreType, progressBar);
         return horizontalLayout;
     }
