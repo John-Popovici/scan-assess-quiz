@@ -2,14 +2,16 @@
   {
     "service_category": "Rules/Charter",
     "qindex": 1,
-    "treeIndex":1,
-    "label": "You visit a hotel, do you connect to the WiFi?"
+    "treeIndex": 1,
+    "label": "You visit a hotel, do you connect to the WiFi?",
     "conditions": [
       {
-      "requiredQuestions": [{
-        "qIndex":2,
-        "aType":1
-      ]
+        "requiredQuestions": [
+          {
+            "qIndex": 2,
+            "aType": 1
+          }
+        ]
       }
     ],
     "answers": [
@@ -17,28 +19,28 @@
         "aindex": 1,
         "score": [
           {
-                "EMPLOYEE_MANAGEMENT":"+1",
-                "LOGICAL_ACCESS":"0",
-    "AWARENESS_AND_COMPLIANCE":"-2",
-    "INFORMATION_SYSTEM":"+1",
-    "LOCAL_AREA_NETWORK":"0",
-    "THIRD_PARTY_MANAGEMENT":"0",
+            "EMPLOYEE_MANAGEMENT": "+1",
+            "LOGICAL_ACCESS": "0",
+            "AWARENESS_AND_COMPLIANCE": "-2",
+            "INFORMATION_SYSTEM": "+1",
+            "LOCAL_AREA_NETWORK": "0",
+            "THIRD_PARTY_MANAGEMENT": "0"
           }
         ],
         "recommendations": "This is the text to recommned",
         "label": "What is the answer?",
-        "follow_up_question_index" : 2
+        "follow_up_question_index": 2
       },
       {
         "aindex": 2,
         "score": [
           {
-                "EMPLOYEE_MANAGEMENT":"+1",
-                "LOGICAL_ACCESS":"0",
-    "AWARENESS_AND_COMPLIANCE":"-2",
-    "INFORMATION_SYSTEM":"+1",
-    "LOCAL_AREA_NETWORK":"0",
-    "THIRD_PARTY_MANAGEMENT":"0",
+            "EMPLOYEE_MANAGEMENT": "+1",
+            "LOGICAL_ACCESS": "0",
+            "AWARENESS_AND_COMPLIANCE": "-2",
+            "INFORMATION_SYSTEM": "+1",
+            "LOCAL_AREA_NETWORK": "0",
+            "THIRD_PARTY_MANAGEMENT": "0"
           }
         ],
         "atype": "P",
@@ -58,18 +60,18 @@
     "section": "Awareness and Compliance",
     "qtype": "M",
     "qindex": 2,
-    "label": "Do you use a VPN?"
+    "label": "Do you use a VPN?",
     "answers": [
       {
         "aindex": 1,
         "score": [
           {
-                "EMPLOYEE_MANAGEMENT":"+1",
-                "LOGICAL_ACCESS":"0",
-    "AWARENESS_AND_COMPLIANCE":"-2",
-    "INFORMATION_SYSTEM":"+1",
-    "LOCAL_AREA_NETWORK":"0",
-    "THIRD_PARTY_MANAGEMENT":"0",
+            "EMPLOYEE_MANAGEMENT": "+1",
+            "LOGICAL_ACCESS": "0",
+            "AWARENESS_AND_COMPLIANCE": "-2",
+            "INFORMATION_SYSTEM": "+1",
+            "LOCAL_AREA_NETWORK": "0",
+            "THIRD_PARTY_MANAGEMENT": "0"
           }
         ],
         "atype": "P",
@@ -82,19 +84,19 @@
           }
         ],
         "label": "not described",
-        "follow_up_question_index" : 2
+        "follow_up_question_index": 2
       },
       {
         "aindex": 2,
         "uniqueAnswer": false,
         "score": [
           {
-                "EMPLOYEE_MANAGEMENT":"+1",
-                "LOGICAL_ACCESS":"0",
-    "AWARENESS_AND_COMPLIANCE":"-2",
-    "INFORMATION_SYSTEM":"+1",
-    "LOCAL_AREA_NETWORK":"0",
-    "THIRD_PARTY_MANAGEMENT":"0",
+            "EMPLOYEE_MANAGEMENT": "+1",
+            "LOGICAL_ACCESS": "0",
+            "AWARENESS_AND_COMPLIANCE": "-2",
+            "INFORMATION_SYSTEM": "+1",
+            "LOCAL_AREA_NETWORK": "0",
+            "THIRD_PARTY_MANAGEMENT": "0"
           }
         ],
         "atype": "P",
