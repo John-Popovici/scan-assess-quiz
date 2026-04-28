@@ -41,6 +41,7 @@
   {
     "service_category": "Rules/Charter",
     "qIndex": 2,
+    "treeIndex": 1,
     "label": "Do you use a VPN?",
     "conditions": [
       {
