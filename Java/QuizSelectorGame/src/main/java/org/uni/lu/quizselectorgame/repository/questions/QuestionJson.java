@@ -6,7 +6,7 @@ public class QuestionJson {
     private Integer qIndex;
     private Integer treeIndex;
     private String label;
-    private List<AnswerJson> answer;
+    private List<AnswerJson> answers;
     private List<Condition> conditions;
 
     public Integer getqIndex() {
@@ -33,12 +33,12 @@ public class QuestionJson {
         this.label = label;
     }
 
-    public List<AnswerJson> getAnswer() {
-        return answer;
+    public List<AnswerJson> getAnswers() {
+        return answers;
     }
 
-    public void setAnswer(List<AnswerJson> answer) {
-        this.answer = answer;
+    public void setAnswers(List<AnswerJson> answers) {
+        this.answers = answers;
     }
 
     public List<Condition> getConditions() {

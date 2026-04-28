@@ -1,15 +1,22 @@
 package org.uni.lu.quizselectorgame.repository.questions;
 
-import java.util.List;
-
 public class Condition {
-    private List<RequiredQuestion> requiredQuestions;
+    private Integer qIndex;
+    private Integer aType;
 
-    public List<RequiredQuestion> getRequiredQuestions() {
-        return requiredQuestions;
+    public Integer getqIndex() {
+        return qIndex;
     }
 
-    public void setRequiredQuestions(List<RequiredQuestion> requiredQuestions) {
-        this.requiredQuestions = requiredQuestions;
+    public void setqIndex(Integer qIndex) {
+        this.qIndex = qIndex;
+    }
+
+    public Integer getaType() {
+        return aType;
+    }
+
+    public void setaType(Integer aType) {
+        this.aType = aType;
     }
 }

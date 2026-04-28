@@ -44,8 +44,8 @@ public class QuestionRepository {
                             List<QuestionJson> questionJsons = gson.fromJson(jsonRead, listType);
 
                             questionJsons.forEach(qj -> {
-                                if (qj.getAnswer() != null && qj.getAnswer().size() == 2) {
-                                    Question question = new Question(qj.getLabel(), qj.getAnswer().getFirst().getLabel(), qj.getAnswer().getLast().getLabel());
+                                if (qj.getAnswers() != null && qj.getAnswers().size() == 2) {
+                                    Question question = new Question(qj.getLabel(), qj.getAnswers().getFirst().getLabel(), qj.getAnswers().getLast().getLabel());
                                     questionList.add(question);
                                 } else {
                                     logger.log(Level.SEVERE, qj.getqIndex() + " is an invalid question");
