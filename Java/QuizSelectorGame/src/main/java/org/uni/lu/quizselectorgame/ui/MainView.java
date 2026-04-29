@@ -114,8 +114,10 @@ public class MainView extends VerticalLayout {
 
         Button leftButton = new Button("<-", (ComponentEventListener<ClickEvent<Button>>) _ -> choseOptionOne(question));
         leftButton.addClickShortcut(Key.ARROW_LEFT);
+        leftButton.setWidth(50f, Unit.PERCENTAGE);
         Button rightButton = new Button("->", (ComponentEventListener<ClickEvent<Button>>) _ -> choseOptionTwo(question));
         rightButton.addClickShortcut(Key.ARROW_RIGHT);
+        rightButton.setWidth(50f, Unit.PERCENTAGE);
 
         Span leftText = new Span(question.getOptionOne());
         Span rightText = new Span(question.getOptionTwo());
