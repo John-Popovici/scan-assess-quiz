@@ -1,0 +1,6272 @@
+[
+  {
+    "qIndex": 1,
+    "treeIndex": 1,
+    "label": "Can an organisation have good cybersecurity governance without clearly assigned accountability?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-3",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Can an organisation have good cybersecurity governance without clearly assigned accountability?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 2,
+    "treeIndex": 1,
+    "label": "Should cybersecurity risk be treated as a business risk rather than only an IT problem?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should cybersecurity risk be treated as a business risk rather than only an IT problem?"
+      }
+    ]
+  },
+  {
+    "qIndex": 3,
+    "treeIndex": 1,
+    "label": "Is the board or senior leadership ultimately responsible for cyber risk oversight?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-3",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is the board or senior leadership ultimately responsible for cyber risk oversight?"
+      }
+    ]
+  },
+  {
+    "qIndex": 4,
+    "treeIndex": 1,
+    "label": "Can a security policy be effective if no one is responsible for enforcing it?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Can a security policy be effective if no one is responsible for enforcing it?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 5,
+    "treeIndex": 1,
+    "label": "Is it enough for a company to have security tools without documented processes?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is it enough for a company to have security tools without documented processes?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 6,
+    "treeIndex": 1,
+    "label": "Should cybersecurity objectives align with business objectives?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should cybersecurity objectives align with business objectives?"
+      }
+    ]
+  },
+  {
+    "qIndex": 7,
+    "treeIndex": 1,
+    "label": "Can governance exist without measurable controls or reporting?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Can governance exist without measurable controls or reporting?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 8,
+    "treeIndex": 1,
+    "label": "Is \u201cwe trust our employees\u201d a sufficient governance model for cybersecurity?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-3",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is \u201cwe trust our employees\u201d a sufficient governance model for cybersecurity?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 9,
+    "treeIndex": 1,
+    "label": "Should cyber risk appetite be defined by senior leadership?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should cyber risk appetite be defined by senior leadership?"
+      }
+    ]
+  },
+  {
+    "qIndex": 10,
+    "treeIndex": 1,
+    "label": "Can an organisation outsource cybersecurity tasks while keeping accountability internally?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-1"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can an organisation outsource cybersecurity tasks while keeping accountability internally?"
+      }
+    ]
+  },
+  {
+    "qIndex": 11,
+    "treeIndex": 1,
+    "label": "Is risk usually calculated using likelihood and impact?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is risk usually calculated using likelihood and impact?"
+      }
+    ]
+  },
+  {
+    "qIndex": 12,
+    "treeIndex": 1,
+    "label": "Can a low-likelihood event still be high risk if the impact is severe?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can a low-likelihood event still be high risk if the impact is severe?"
+      }
+    ]
+  },
+  {
+    "qIndex": 13,
+    "treeIndex": 1,
+    "label": "Should all cyber risks be eliminated?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Should all cyber risks be eliminated?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 14,
+    "treeIndex": 1,
+    "label": "Is accepting risk sometimes a valid decision?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is accepting risk sometimes a valid decision?"
+      }
+    ]
+  },
+  {
+    "qIndex": 15,
+    "treeIndex": 1,
+    "label": "Should risk acceptance be documented?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should risk acceptance be documented?"
+      }
+    ]
+  },
+  {
+    "qIndex": 16,
+    "treeIndex": 1,
+    "label": "Can risk be transferred through insurance or contracts?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-1"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can risk be transferred through insurance or contracts?"
+      }
+    ]
+  },
+  {
+    "qIndex": 17,
+    "treeIndex": 1,
+    "label": "Does patching every vulnerability immediately always represent the best risk decision?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Does patching every vulnerability immediately always represent the best risk decision?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 18,
+    "treeIndex": 1,
+    "label": "Should vulnerabilities be prioritised based only on CVSS score?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Should vulnerabilities be prioritised based only on CVSS score?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 19,
+    "treeIndex": 1,
+    "label": "Can a system with known vulnerabilities still be acceptable if compensating controls exist?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can a system with known vulnerabilities still be acceptable if compensating controls exist?"
+      }
+    ]
+  },
+  {
+    "qIndex": 20,
+    "treeIndex": 1,
+    "label": "Is \u201cno incidents so far\u201d proof that risk is low?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is \u201cno incidents so far\u201d proof that risk is low?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 21,
+    "treeIndex": 1,
+    "label": "Does being compliant automatically mean being secure?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-3",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Does being compliant automatically mean being secure?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 22,
+    "treeIndex": 1,
+    "label": "Can an organisation be secure but not fully compliant?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can an organisation be secure but not fully compliant?"
+      }
+    ]
+  },
+  {
+    "qIndex": 23,
+    "treeIndex": 1,
+    "label": "Is compliance mainly about meeting external or internal requirements?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is compliance mainly about meeting external or internal requirements?"
+      }
+    ]
+  },
+  {
+    "qIndex": 24,
+    "treeIndex": 1,
+    "label": "Should compliance evidence be retained?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should compliance evidence be retained?"
+      }
+    ]
+  },
+  {
+    "qIndex": 25,
+    "treeIndex": 1,
+    "label": "Can a failed audit indicate a governance problem rather than only a technical problem?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can a failed audit indicate a governance problem rather than only a technical problem?"
+      }
+    ]
+  },
+  {
+    "qIndex": 26,
+    "treeIndex": 1,
+    "label": "Is compliance a one-time activity?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is compliance a one-time activity?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 27,
+    "treeIndex": 1,
+    "label": "Should compliance obligations influence security control selection?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should compliance obligations influence security control selection?"
+      }
+    ]
+  },
+  {
+    "qIndex": 28,
+    "treeIndex": 1,
+    "label": "Can regulations require incident reporting within fixed time limits?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can regulations require incident reporting within fixed time limits?"
+      }
+    ]
+  },
+  {
+    "qIndex": 29,
+    "treeIndex": 1,
+    "label": "Is it safe to ignore a regulation if enforcement seems unlikely?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-3",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is it safe to ignore a regulation if enforcement seems unlikely?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 30,
+    "treeIndex": 1,
+    "label": "Can contractual requirements create cybersecurity compliance obligations?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-1"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can contractual requirements create cybersecurity compliance obligations?"
+      }
+    ]
+  },
+  {
+    "qIndex": 31,
+    "treeIndex": 1,
+    "label": "Is multi-factor authentication an example of a security control?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is multi-factor authentication an example of a security control?"
+      }
+    ]
+  },
+  {
+    "qIndex": 32,
+    "treeIndex": 1,
+    "label": "Can a security control be administrative rather than technical?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can a security control be administrative rather than technical?"
+      }
+    ]
+  },
+  {
+    "qIndex": 33,
+    "treeIndex": 1,
+    "label": "Is staff training a type of security control?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is staff training a type of security control?"
+      }
+    ]
+  },
+  {
+    "qIndex": 34,
+    "treeIndex": 1,
+    "label": "Can a control reduce impact without reducing likelihood?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can a control reduce impact without reducing likelihood?"
+      }
+    ]
+  },
+  {
+    "qIndex": 35,
+    "treeIndex": 1,
+    "label": "Should controls be tested to confirm they work?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should controls be tested to confirm they work?"
+      }
+    ]
+  },
+  {
+    "qIndex": 36,
+    "treeIndex": 1,
+    "label": "Is a control useful if nobody knows whether it is operating correctly?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is a control useful if nobody knows whether it is operating correctly?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 37,
+    "treeIndex": 1,
+    "label": "Can one control satisfy multiple compliance requirements?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can one control satisfy multiple compliance requirements?"
+      }
+    ]
+  },
+  {
+    "qIndex": 38,
+    "treeIndex": 1,
+    "label": "Should control ownership be assigned to a named role or team?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should control ownership be assigned to a named role or team?"
+      }
+    ]
+  },
+  {
+    "qIndex": 39,
+    "treeIndex": 1,
+    "label": "Is encryption always sufficient to protect sensitive data?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is encryption always sufficient to protect sensitive data?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 40,
+    "treeIndex": 1,
+    "label": "Can logging be considered a detective control?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can logging be considered a detective control?"
+      }
+    ]
+  },
+  {
+    "qIndex": 41,
+    "treeIndex": 1,
+    "label": "Is a policy usually higher-level than a procedure?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is a policy usually higher-level than a procedure?"
+      }
+    ]
+  },
+  {
+    "qIndex": 42,
+    "treeIndex": 1,
+    "label": "Should policies be written so employees can realistically follow them?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should policies be written so employees can realistically follow them?"
+      }
+    ]
+  },
+  {
+    "qIndex": 43,
+    "treeIndex": 1,
+    "label": "Can a policy create risk if it is unrealistic or ignored?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can a policy create risk if it is unrealistic or ignored?"
+      }
+    ]
+  },
+  {
+    "qIndex": 44,
+    "treeIndex": 1,
+    "label": "Should procedures describe how to carry out a policy?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should procedures describe how to carry out a policy?"
+      }
+    ]
+  },
+  {
+    "qIndex": 45,
+    "treeIndex": 1,
+    "label": "Is it enough to publish a policy without training staff on it?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is it enough to publish a policy without training staff on it?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 46,
+    "treeIndex": 1,
+    "label": "Should security policies be reviewed periodically?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should security policies be reviewed periodically?"
+      }
+    ]
+  },
+  {
+    "qIndex": 47,
+    "treeIndex": 1,
+    "label": "Can exceptions to policy be allowed if documented and approved?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can exceptions to policy be allowed if documented and approved?"
+      }
+    ]
+  },
+  {
+    "qIndex": 48,
+    "treeIndex": 1,
+    "label": "Should every employee have administrator access if it makes work easier?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "-1",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Should every employee have administrator access if it makes work easier?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "0",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 49,
+    "treeIndex": 1,
+    "label": "Is \u201cuse strong passwords\u201d a complete access control policy?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "-1",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is \u201cuse strong passwords\u201d a complete access control policy?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 50,
+    "treeIndex": 1,
+    "label": "Should acceptable use policies cover company devices and systems?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should acceptable use policies cover company devices and systems?"
+      }
+    ]
+  },
+  {
+    "qIndex": 51,
+    "treeIndex": 1,
+    "label": "Should users normally receive the minimum access needed for their role?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should users normally receive the minimum access needed for their role?"
+      }
+    ]
+  },
+  {
+    "qIndex": 52,
+    "treeIndex": 1,
+    "label": "Is least privilege mainly a governance and risk principle, not just a technical setting?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is least privilege mainly a governance and risk principle, not just a technical setting?"
+      }
+    ]
+  },
+  {
+    "qIndex": 53,
+    "treeIndex": 1,
+    "label": "Should privileged accounts be reviewed more often than ordinary accounts?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should privileged accounts be reviewed more often than ordinary accounts?"
+      }
+    ]
+  },
+  {
+    "qIndex": 54,
+    "treeIndex": 1,
+    "label": "Can dormant accounts create security risk?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can dormant accounts create security risk?"
+      }
+    ]
+  },
+  {
+    "qIndex": 55,
+    "treeIndex": 1,
+    "label": "Should access be removed promptly when someone leaves the organisation?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should access be removed promptly when someone leaves the organisation?"
+      }
+    ]
+  },
+  {
+    "qIndex": 56,
+    "treeIndex": 1,
+    "label": "Is shared administrator access good practice?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-3",
+          "LOGICAL_ACCESS": "-3",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is shared administrator access good practice?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 57,
+    "treeIndex": 1,
+    "label": "Can excessive permissions increase both security and compliance risk?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can excessive permissions increase both security and compliance risk?"
+      }
+    ]
+  },
+  {
+    "qIndex": 58,
+    "treeIndex": 1,
+    "label": "Should access reviews produce evidence?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should access reviews produce evidence?"
+      }
+    ]
+  },
+  {
+    "qIndex": 59,
+    "treeIndex": 1,
+    "label": "Is role-based access control useful for governance?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is role-based access control useful for governance?"
+      }
+    ]
+  },
+  {
+    "qIndex": 60,
+    "treeIndex": 1,
+    "label": "Can a user be authorised but still perform an inappropriate action?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can a user be authorised but still perform an inappropriate action?"
+      }
+    ]
+  },
+  {
+    "qIndex": 61,
+    "treeIndex": 1,
+    "label": "Can suppliers introduce cybersecurity risk into an organisation?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-2"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can suppliers introduce cybersecurity risk into an organisation?"
+      }
+    ]
+  },
+  {
+    "qIndex": 62,
+    "treeIndex": 1,
+    "label": "Should third-party access be governed by contracts and controls?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "-1",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-2"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should third-party access be governed by contracts and controls?"
+      }
+    ]
+  },
+  {
+    "qIndex": 63,
+    "treeIndex": 1,
+    "label": "Is it enough to trust a supplier because they are well known?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-2"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is it enough to trust a supplier because they are well known?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 64,
+    "treeIndex": 1,
+    "label": "Should critical suppliers be assessed more carefully than low-risk suppliers?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-2"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should critical suppliers be assessed more carefully than low-risk suppliers?"
+      }
+    ]
+  },
+  {
+    "qIndex": 65,
+    "treeIndex": 1,
+    "label": "Can cloud providers reduce some risks while introducing others?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-2"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can cloud providers reduce some risks while introducing others?"
+      }
+    ]
+  },
+  {
+    "qIndex": 66,
+    "treeIndex": 1,
+    "label": "Does outsourcing data processing remove all responsibility from the original organisation?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-3"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Does outsourcing data processing remove all responsibility from the original organisation?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 67,
+    "treeIndex": 1,
+    "label": "Should vendor risk assessments consider what data the vendor can access?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "-1",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-2"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should vendor risk assessments consider what data the vendor can access?"
+      }
+    ]
+  },
+  {
+    "qIndex": 68,
+    "treeIndex": 1,
+    "label": "Can service level agreements include cybersecurity requirements?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-2"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can service level agreements include cybersecurity requirements?"
+      }
+    ]
+  },
+  {
+    "qIndex": 69,
+    "treeIndex": 1,
+    "label": "Should supplier security be reviewed after onboarding?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-2"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should supplier security be reviewed after onboarding?"
+      }
+    ]
+  },
+  {
+    "qIndex": 70,
+    "treeIndex": 1,
+    "label": "Can a small supplier pose a large risk if they handle sensitive data?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-2"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can a small supplier pose a large risk if they handle sensitive data?"
+      }
+    ]
+  },
+  {
+    "qIndex": 71,
+    "treeIndex": 1,
+    "label": "Should organisations have an incident response plan before an incident occurs?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should organisations have an incident response plan before an incident occurs?"
+      }
+    ]
+  },
+  {
+    "qIndex": 72,
+    "treeIndex": 1,
+    "label": "Is the first hour of an incident a good time to invent the escalation process?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is the first hour of an incident a good time to invent the escalation process?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 73,
+    "treeIndex": 1,
+    "label": "Should incidents be classified by severity?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should incidents be classified by severity?"
+      }
+    ]
+  },
+  {
+    "qIndex": 74,
+    "treeIndex": 1,
+    "label": "Can poor communication make a cyber incident worse?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can poor communication make a cyber incident worse?"
+      }
+    ]
+  },
+  {
+    "qIndex": 75,
+    "treeIndex": 1,
+    "label": "Should incident response roles be defined in advance?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should incident response roles be defined in advance?"
+      }
+    ]
+  },
+  {
+    "qIndex": 76,
+    "treeIndex": 1,
+    "label": "Is preserving evidence important during incident response?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is preserving evidence important during incident response?"
+      }
+    ]
+  },
+  {
+    "qIndex": 77,
+    "treeIndex": 1,
+    "label": "Can incident reporting be legally required?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can incident reporting be legally required?"
+      }
+    ]
+  },
+  {
+    "qIndex": 78,
+    "treeIndex": 1,
+    "label": "Should lessons learned after an incident feed back into risk management?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should lessons learned after an incident feed back into risk management?"
+      }
+    ]
+  },
+  {
+    "qIndex": 79,
+    "treeIndex": 1,
+    "label": "Is every security alert automatically a confirmed incident?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is every security alert automatically a confirmed incident?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 80,
+    "treeIndex": 1,
+    "label": "Should tabletop exercises be used to test incident response plans?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should tabletop exercises be used to test incident response plans?"
+      }
+    ]
+  },
+  {
+    "qIndex": 81,
+    "treeIndex": 1,
+    "label": "Is backup testing as important as backup creation?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "-2",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is backup testing as important as backup creation?"
+      }
+    ]
+  },
+  {
+    "qIndex": 82,
+    "treeIndex": 1,
+    "label": "Can ransomware be a business continuity issue?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "-2",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can ransomware be a business continuity issue?"
+      }
+    ]
+  },
+  {
+    "qIndex": 83,
+    "treeIndex": 1,
+    "label": "Should recovery time objectives be based on business needs?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "-2",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should recovery time objectives be based on business needs?"
+      }
+    ]
+  },
+  {
+    "qIndex": 84,
+    "treeIndex": 1,
+    "label": "Is having backups enough if restoration has never been tested?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "-3",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is having backups enough if restoration has never been tested?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 85,
+    "treeIndex": 1,
+    "label": "Can a cyber incident affect physical operations?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "-2",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can a cyber incident affect physical operations?"
+      }
+    ]
+  },
+  {
+    "qIndex": 86,
+    "treeIndex": 1,
+    "label": "Should business continuity planning include key suppliers?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "-2",
+          "THIRD_PARTY_MANAGEMENT": "-1"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should business continuity planning include key suppliers?"
+      }
+    ]
+  },
+  {
+    "qIndex": 87,
+    "treeIndex": 1,
+    "label": "Is resilience about continuing critical operations despite disruption?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "-2",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is resilience about continuing critical operations despite disruption?"
+      }
+    ]
+  },
+  {
+    "qIndex": 88,
+    "treeIndex": 1,
+    "label": "Can high availability reduce some operational risks?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "-2",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can high availability reduce some operational risks?"
+      }
+    ]
+  },
+  {
+    "qIndex": 89,
+    "treeIndex": 1,
+    "label": "Does disaster recovery focus only on cybersecurity?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "-2",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Does disaster recovery focus only on cybersecurity?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 90,
+    "treeIndex": 1,
+    "label": "Should critical systems have documented recovery procedures?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "0",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "-2",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should critical systems have documented recovery procedures?"
+      }
+    ]
+  },
+  {
+    "qIndex": 91,
+    "treeIndex": 1,
+    "label": "Should personal data be protected according to its sensitivity?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should personal data be protected according to its sensitivity?"
+      }
+    ]
+  },
+  {
+    "qIndex": 92,
+    "treeIndex": 1,
+    "label": "Can collecting unnecessary personal data increase risk?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can collecting unnecessary personal data increase risk?"
+      }
+    ]
+  },
+  {
+    "qIndex": 93,
+    "treeIndex": 1,
+    "label": "Is data minimisation a privacy principle?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is data minimisation a privacy principle?"
+      }
+    ]
+  },
+  {
+    "qIndex": 94,
+    "treeIndex": 1,
+    "label": "Should organisations know where sensitive data is stored?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should organisations know where sensitive data is stored?"
+      }
+    ]
+  },
+  {
+    "qIndex": 95,
+    "treeIndex": 1,
+    "label": "Can encrypted personal data still be subject to privacy regulation?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can encrypted personal data still be subject to privacy regulation?"
+      }
+    ]
+  },
+  {
+    "qIndex": 96,
+    "treeIndex": 1,
+    "label": "Should access to personal data be logged or monitored where appropriate?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should access to personal data be logged or monitored where appropriate?"
+      }
+    ]
+  },
+  {
+    "qIndex": 97,
+    "treeIndex": 1,
+    "label": "Is consent always the only lawful basis for processing personal data?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "-3",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is consent always the only lawful basis for processing personal data?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 98,
+    "treeIndex": 1,
+    "label": "Can a data breach involve loss of availability, not only disclosure?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can a data breach involve loss of availability, not only disclosure?"
+      }
+    ]
+  },
+  {
+    "qIndex": 99,
+    "treeIndex": 1,
+    "label": "Should retention periods be defined for regulated or sensitive data?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should retention periods be defined for regulated or sensitive data?"
+      }
+    ]
+  },
+  {
+    "qIndex": 100,
+    "treeIndex": 1,
+    "label": "Is anonymised data usually lower risk than directly identifiable data?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "-2",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is anonymised data usually lower risk than directly identifiable data?"
+      }
+    ]
+  },
+  {
+    "qIndex": 101,
+    "treeIndex": 1,
+    "label": "Is an audit mainly about gathering evidence against criteria?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is an audit mainly about gathering evidence against criteria?"
+      }
+    ]
+  },
+  {
+    "qIndex": 102,
+    "treeIndex": 1,
+    "label": "Can an audit identify control weaknesses without proving a breach occurred?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can an audit identify control weaknesses without proving a breach occurred?"
+      }
+    ]
+  },
+  {
+    "qIndex": 103,
+    "treeIndex": 1,
+    "label": "Should audit findings be tracked until resolved or accepted?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should audit findings be tracked until resolved or accepted?"
+      }
+    ]
+  },
+  {
+    "qIndex": 104,
+    "treeIndex": 1,
+    "label": "Is self-assessment always as reliable as independent assurance?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-3",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is self-assessment always as reliable as independent assurance?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 105,
+    "treeIndex": 1,
+    "label": "Can missing evidence cause an audit failure even if the control exists?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can missing evidence cause an audit failure even if the control exists?"
+      }
+    ]
+  },
+  {
+    "qIndex": 106,
+    "treeIndex": 1,
+    "label": "Should audit scope be defined before testing begins?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should audit scope be defined before testing begins?"
+      }
+    ]
+  },
+  {
+    "qIndex": 107,
+    "treeIndex": 1,
+    "label": "Is \u201cthe control worked once last year\u201d enough to prove ongoing effectiveness?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-3",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is \u201cthe control worked once last year\u201d enough to prove ongoing effectiveness?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 108,
+    "treeIndex": 1,
+    "label": "Can audits help improve governance?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can audits help improve governance?"
+      }
+    ]
+  },
+  {
+    "qIndex": 109,
+    "treeIndex": 1,
+    "label": "Should high-risk findings receive more urgent remediation?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should high-risk findings receive more urgent remediation?"
+      }
+    ]
+  },
+  {
+    "qIndex": 110,
+    "treeIndex": 1,
+    "label": "Is audit evidence stronger when it is objective and repeatable?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is audit evidence stronger when it is objective and repeatable?"
+      }
+    ]
+  },
+  {
+    "qIndex": 111,
+    "treeIndex": 1,
+    "label": "Can security culture affect real-world cyber risk?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can security culture affect real-world cyber risk?"
+      }
+    ]
+  },
+  {
+    "qIndex": 112,
+    "treeIndex": 1,
+    "label": "Is annual training alone enough to guarantee secure behaviour?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-3",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is annual training alone enough to guarantee secure behaviour?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 113,
+    "treeIndex": 1,
+    "label": "Should phishing simulations be used carefully to avoid damaging trust?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should phishing simulations be used carefully to avoid damaging trust?"
+      }
+    ]
+  },
+  {
+    "qIndex": 114,
+    "treeIndex": 1,
+    "label": "Can employees be a useful detection layer?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can employees be a useful detection layer?"
+      }
+    ]
+  },
+  {
+    "qIndex": 115,
+    "treeIndex": 1,
+    "label": "Is blaming users always the best response to phishing failures?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is blaming users always the best response to phishing failures?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 116,
+    "treeIndex": 1,
+    "label": "Should reporting suspicious activity be easy for staff?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should reporting suspicious activity be easy for staff?"
+      }
+    ]
+  },
+  {
+    "qIndex": 117,
+    "treeIndex": 1,
+    "label": "Can fear of punishment reduce incident reporting?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can fear of punishment reduce incident reporting?"
+      }
+    ]
+  },
+  {
+    "qIndex": 118,
+    "treeIndex": 1,
+    "label": "Is awareness training more effective when linked to realistic work scenarios?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is awareness training more effective when linked to realistic work scenarios?"
+      }
+    ]
+  },
+  {
+    "qIndex": 119,
+    "treeIndex": 1,
+    "label": "Should executives receive security awareness training too?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should executives receive security awareness training too?"
+      }
+    ]
+  },
+  {
+    "qIndex": 120,
+    "treeIndex": 1,
+    "label": "Can culture compensate for every missing technical control?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-3",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Can culture compensate for every missing technical control?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 121,
+    "treeIndex": 1,
+    "label": "Can an organisation protect systems it does not know exist?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Can an organisation protect systems it does not know exist?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 122,
+    "treeIndex": 1,
+    "label": "Should asset inventories include cloud assets?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-1"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should asset inventories include cloud assets?"
+      }
+    ]
+  },
+  {
+    "qIndex": 123,
+    "treeIndex": 1,
+    "label": "Is asset ownership important for accountability?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is asset ownership important for accountability?"
+      }
+    ]
+  },
+  {
+    "qIndex": 124,
+    "treeIndex": 1,
+    "label": "Can unknown software increase vulnerability management risk?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can unknown software increase vulnerability management risk?"
+      }
+    ]
+  },
+  {
+    "qIndex": 125,
+    "treeIndex": 1,
+    "label": "Should critical assets be prioritised for protection?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should critical assets be prioritised for protection?"
+      }
+    ]
+  },
+  {
+    "qIndex": 126,
+    "treeIndex": 1,
+    "label": "Is a spreadsheet asset inventory always sufficient for a large organisation?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is a spreadsheet asset inventory always sufficient for a large organisation?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 127,
+    "treeIndex": 1,
+    "label": "Should data assets be classified as well as hardware assets?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should data assets be classified as well as hardware assets?"
+      }
+    ]
+  },
+  {
+    "qIndex": 128,
+    "treeIndex": 1,
+    "label": "Can shadow IT create governance problems?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can shadow IT create governance problems?"
+      }
+    ]
+  },
+  {
+    "qIndex": 129,
+    "treeIndex": 1,
+    "label": "Should asset inventories be updated when systems change?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should asset inventories be updated when systems change?"
+      }
+    ]
+  },
+  {
+    "qIndex": 130,
+    "treeIndex": 1,
+    "label": "Is knowing asset criticality useful for incident response?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is knowing asset criticality useful for incident response?"
+      }
+    ]
+  },
+  {
+    "qIndex": 131,
+    "treeIndex": 1,
+    "label": "Should vulnerability management include discovery, prioritisation, remediation, and verification?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "-2",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should vulnerability management include discovery, prioritisation, remediation, and verification?"
+      }
+    ]
+  },
+  {
+    "qIndex": 132,
+    "treeIndex": 1,
+    "label": "Is patching the only possible response to a vulnerability?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "-2",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is patching the only possible response to a vulnerability?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 133,
+    "treeIndex": 1,
+    "label": "Can compensating controls temporarily reduce vulnerability risk?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "-2",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can compensating controls temporarily reduce vulnerability risk?"
+      }
+    ]
+  },
+  {
+    "qIndex": 134,
+    "treeIndex": 1,
+    "label": "Should internet-facing critical vulnerabilities usually be prioritised?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "-2",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should internet-facing critical vulnerabilities usually be prioritised?"
+      }
+    ]
+  },
+  {
+    "qIndex": 135,
+    "treeIndex": 1,
+    "label": "Is a vulnerability scan the same as a full risk assessment?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "-2",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is a vulnerability scan the same as a full risk assessment?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 136,
+    "treeIndex": 1,
+    "label": "Can patching create operational risk?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "-2",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can patching create operational risk?"
+      }
+    ]
+  },
+  {
+    "qIndex": 137,
+    "treeIndex": 1,
+    "label": "Should patch exceptions be documented?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "-2",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should patch exceptions be documented?"
+      }
+    ]
+  },
+  {
+    "qIndex": 138,
+    "treeIndex": 1,
+    "label": "Is end-of-life software usually a governance concern?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "-2",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is end-of-life software usually a governance concern?"
+      }
+    ]
+  },
+  {
+    "qIndex": 139,
+    "treeIndex": 1,
+    "label": "Should vulnerability remediation timelines depend on severity and exposure?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "-2",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should vulnerability remediation timelines depend on severity and exposure?"
+      }
+    ]
+  },
+  {
+    "qIndex": 140,
+    "treeIndex": 1,
+    "label": "Can a vulnerability be accepted if the business formally approves the risk?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-1",
+          "INFORMATION_SYSTEM": "-2",
+          "LOCAL_AREA_NETWORK": "-2",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can a vulnerability be accepted if the business formally approves the risk?"
+      }
+    ]
+  },
+  {
+    "qIndex": 141,
+    "treeIndex": 1,
+    "label": "Should cyber metrics help decision-makers understand risk?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should cyber metrics help decision-makers understand risk?"
+      }
+    ]
+  },
+  {
+    "qIndex": 142,
+    "treeIndex": 1,
+    "label": "Is counting blocked attacks always a meaningful security metric?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is counting blocked attacks always a meaningful security metric?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 143,
+    "treeIndex": 1,
+    "label": "Can too many metrics obscure the real risk picture?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can too many metrics obscure the real risk picture?"
+      }
+    ]
+  },
+  {
+    "qIndex": 144,
+    "treeIndex": 1,
+    "label": "Should security reports be tailored to their audience?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should security reports be tailored to their audience?"
+      }
+    ]
+  },
+  {
+    "qIndex": 145,
+    "treeIndex": 1,
+    "label": "Is mean time to detect a useful security metric?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is mean time to detect a useful security metric?"
+      }
+    ]
+  },
+  {
+    "qIndex": 146,
+    "treeIndex": 1,
+    "label": "Can a metric drive bad behaviour if poorly designed?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can a metric drive bad behaviour if poorly designed?"
+      }
+    ]
+  },
+  {
+    "qIndex": 147,
+    "treeIndex": 1,
+    "label": "Should risk reports include trends over time?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should risk reports include trends over time?"
+      }
+    ]
+  },
+  {
+    "qIndex": 148,
+    "treeIndex": 1,
+    "label": "Is reporting \u201czero risk\u201d usually credible?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is reporting \u201czero risk\u201d usually credible?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 149,
+    "treeIndex": 1,
+    "label": "Can governance dashboards support accountability?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can governance dashboards support accountability?"
+      }
+    ]
+  },
+  {
+    "qIndex": 150,
+    "treeIndex": 1,
+    "label": "Should metrics include both technical and business-relevant indicators?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-2",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-2",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should metrics include both technical and business-relevant indicators?"
+      }
+    ]
+  },
+  {
+    "qIndex": 151,
+    "treeIndex": 1,
+    "label": "Is it acceptable to hide a serious security weakness from leadership to avoid blame?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-3",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is it acceptable to hide a serious security weakness from leadership to avoid blame?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 152,
+    "treeIndex": 1,
+    "label": "Should security professionals consider harm to users and third parties?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-3",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should security professionals consider harm to users and third parties?"
+      }
+    ]
+  },
+  {
+    "qIndex": 153,
+    "treeIndex": 1,
+    "label": "Can technically legal behaviour still be unethical?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-3",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can technically legal behaviour still be unethical?"
+      }
+    ]
+  },
+  {
+    "qIndex": 154,
+    "treeIndex": 1,
+    "label": "Is transparency important after a major breach?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-3",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is transparency important after a major breach?"
+      }
+    ]
+  },
+  {
+    "qIndex": 155,
+    "treeIndex": 1,
+    "label": "Should conflicts of interest be disclosed in security decision-making?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-3",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should conflicts of interest be disclosed in security decision-making?"
+      }
+    ]
+  },
+  {
+    "qIndex": 156,
+    "treeIndex": 1,
+    "label": "Can poor governance create ethical failures?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-3",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can poor governance create ethical failures?"
+      }
+    ]
+  },
+  {
+    "qIndex": 157,
+    "treeIndex": 1,
+    "label": "Is it acceptable to falsify compliance evidence if the control mostly works?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-3",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Is it acceptable to falsify compliance evidence if the control mostly works?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 158,
+    "treeIndex": 1,
+    "label": "Should security testing have clear authorisation?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-3",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should security testing have clear authorisation?"
+      }
+    ]
+  },
+  {
+    "qIndex": 159,
+    "treeIndex": 1,
+    "label": "Can \u201cgood intentions\u201d remove the need for permission in security testing?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-3",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Can \u201cgood intentions\u201d remove the need for permission in security testing?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 160,
+    "treeIndex": 1,
+    "label": "Should accountability apply to senior leaders as well as technical staff?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-3",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should accountability apply to senior leaders as well as technical staff?"
+      }
+    ]
+  },
+  {
+    "qIndex": 161,
+    "treeIndex": 1,
+    "label": "Does NIS2 place more responsibility on management bodies for cybersecurity risk?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-3"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Does NIS2 place more responsibility on management bodies for cybersecurity risk?"
+      }
+    ]
+  },
+  {
+    "qIndex": 162,
+    "treeIndex": 1,
+    "label": "Can essential or important entities under NIS2 ignore supply chain security?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-3"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Can essential or important entities under NIS2 ignore supply chain security?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 163,
+    "treeIndex": 1,
+    "label": "Is incident reporting a major part of NIS2-style regulation?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-3"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Is incident reporting a major part of NIS2-style regulation?"
+      }
+    ]
+  },
+  {
+    "qIndex": 164,
+    "treeIndex": 1,
+    "label": "Does NIS2 only apply to companies physically attacked by hackers?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-3"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Does NIS2 only apply to companies physically attacked by hackers?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 165,
+    "treeIndex": 1,
+    "label": "Can governance failures create regulatory consequences under modern cyber laws?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-3"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can governance failures create regulatory consequences under modern cyber laws?"
+      }
+    ]
+  },
+  {
+    "qIndex": 166,
+    "treeIndex": 1,
+    "label": "Should organisations under cyber regulation document their risk management measures?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-3"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should organisations under cyber regulation document their risk management measures?"
+      }
+    ]
+  },
+  {
+    "qIndex": 167,
+    "treeIndex": 1,
+    "label": "Does regulation usually remove the need for internal risk assessment?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-3"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: Does regulation usually remove the need for internal risk assessment?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 168,
+    "treeIndex": 1,
+    "label": "Can national authorities require evidence of cybersecurity controls?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-3"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can national authorities require evidence of cybersecurity controls?"
+      }
+    ]
+  },
+  {
+    "qIndex": 169,
+    "treeIndex": 1,
+    "label": "Should management understand cyber risk well enough to supervise it?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-3"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Should management understand cyber risk well enough to supervise it?"
+      }
+    ]
+  },
+  {
+    "qIndex": 170,
+    "treeIndex": 1,
+    "label": "Can non-technical governance failures contribute to technical security incidents?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-3"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: Can non-technical governance failures contribute to technical security incidents?"
+      }
+    ]
+  },
+  {
+    "qIndex": 171,
+    "treeIndex": 1,
+    "label": "If a company passes ISO 27001 certification, is it immune from cyber incidents?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: If a company passes ISO 27001 certification, is it immune from cyber incidents?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 172,
+    "treeIndex": 1,
+    "label": "If a vulnerability has no public exploit, can it be ignored?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: If a vulnerability has no public exploit, can it be ignored?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 173,
+    "treeIndex": 1,
+    "label": "If data is stored in the cloud, is the cloud provider always responsible for securing it?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-1"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: If data is stored in the cloud, is the cloud provider always responsible for securing it?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 174,
+    "treeIndex": 1,
+    "label": "If employees are trained, is phishing no longer a significant risk?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: If employees are trained, is phishing no longer a significant risk?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 175,
+    "treeIndex": 1,
+    "label": "If a risk is accepted, does that mean it no longer exists?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: If a risk is accepted, does that mean it no longer exists?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 176,
+    "treeIndex": 1,
+    "label": "If a system is internal-only, does it no longer need security controls?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "-1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: If a system is internal-only, does it no longer need security controls?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 177,
+    "treeIndex": 1,
+    "label": "If no personal data is leaked, can there still be a reportable cyber incident?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "-1",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: If no personal data is leaked, can there still be a reportable cyber incident?"
+      }
+    ]
+  },
+  {
+    "qIndex": 178,
+    "treeIndex": 1,
+    "label": "If a control is expensive, does that automatically mean it is effective?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: If a control is expensive, does that automatically mean it is effective?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 179,
+    "treeIndex": 1,
+    "label": "If a supplier has ISO certification, should vendor risk review stop there?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-1"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: If a supplier has ISO certification, should vendor risk review stop there?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 180,
+    "treeIndex": 1,
+    "label": "If a firewall is installed, is network security complete?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "-1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: If a firewall is installed, is network security complete?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 181,
+    "treeIndex": 1,
+    "label": "If backups exist, is ransomware risk solved?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "-1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: If backups exist, is ransomware risk solved?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "+1",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 182,
+    "treeIndex": 1,
+    "label": "If a policy exists, is the organisation governed well?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: If a policy exists, is the organisation governed well?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 183,
+    "treeIndex": 1,
+    "label": "If an audit finds no issues, does that prove there are no issues?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: If an audit finds no issues, does that prove there are no issues?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 184,
+    "treeIndex": 1,
+    "label": "If senior leadership delegates cybersecurity to IT, are they no longer accountable?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: If senior leadership delegates cybersecurity to IT, are they no longer accountable?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 185,
+    "treeIndex": 1,
+    "label": "If a user clicks a phishing link, is the user always the root cause?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "-1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: If a user clicks a phishing link, is the user always the root cause?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "+1",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 186,
+    "treeIndex": 1,
+    "label": "If a risk is rated low, should it never be reviewed again?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: If a risk is rated low, should it never be reviewed again?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 187,
+    "treeIndex": 1,
+    "label": "If a control fails once, does that always mean the whole framework is useless?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: If a control fails once, does that always mean the whole framework is useless?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 188,
+    "treeIndex": 1,
+    "label": "If encryption is used, is data classification unnecessary?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "-1",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: If encryption is used, is data classification unnecessary?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "+1",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 189,
+    "treeIndex": 1,
+    "label": "If a breach was caused by a supplier, can the organisation avoid all responsibility?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "-1"
+        },
+        "recommendations": "Correct answer: No. Review the GRC principle behind this: If a breach was caused by a supplier, can the organisation avoid all responsibility?"
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "+1"
+        },
+        "recommendations": ""
+      }
+    ]
+  },
+  {
+    "qIndex": 190,
+    "treeIndex": 1,
+    "label": "If a security team is highly technical, does it still need governance processes?",
+    "answers": [
+      {
+        "aIndex": 1,
+        "label": "Yes",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "+1",
+          "INFORMATION_SYSTEM": "+1",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": ""
+      },
+      {
+        "aIndex": 2,
+        "label": "No",
+        "score": {
+          "EMPLOYEE_MANAGEMENT": "0",
+          "LOGICAL_ACCESS": "0",
+          "AWARENESS_AND_COMPLIANCE": "-3",
+          "INFORMATION_SYSTEM": "-3",
+          "LOCAL_AREA_NETWORK": "0",
+          "THIRD_PARTY_MANAGEMENT": "0"
+        },
+        "recommendations": "Correct answer: Yes. Review the GRC principle behind this: If a security team is highly technical, does it still need governance processes?"
+      }
+    ]
+  }
+]
