@@ -78,7 +78,7 @@ public class QuestionRepository {
 
                                     if (qj.getConditions() != null && !qj.getConditions().isEmpty()) {
                                         qj.getConditions().forEach(condition -> {
-                                            RequiredQuestion requiredQuestion = new RequiredQuestion(condition.getTreeIndex(), condition.getQuestionId(), condition.getAnswerType());
+                                            RequiredQuestion requiredQuestion = new RequiredQuestion(condition.getTreeId(), condition.getQuestionId(), condition.getAnswerType());
                                             question.getRequiredQuestions().add(requiredQuestion);
                                         });
                                     }

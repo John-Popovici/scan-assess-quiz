@@ -8,7 +8,7 @@ public class QuestionJson {
     private Integer treeId;
     private String label;
     private List<AnswerJson> answers;
-    private List<Condition> conditions;
+    private List<ConditionJson> conditions;
 
     public Integer getQuestionId() {
         return qId;
@@ -42,11 +42,11 @@ public class QuestionJson {
         this.answers = answers;
     }
 
-    public List<Condition> getConditions() {
+    public List<ConditionJson> getConditions() {
         return conditions;
     }
 
-    public void setConditions(List<Condition> conditions) {
+    public void setConditions(List<ConditionJson> conditions) {
         this.conditions = conditions;
     }
 }
