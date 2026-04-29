@@ -1,18 +1,18 @@
 package org.uni.lu.quizselectorgame.repository.questions;
 
 public class AnswerJson {
-    private Integer aIndex;
+    private Integer aId;
     private String label;
-    private Integer followUpQuestionIndex;
+    private Integer followUpQuestionId;
     private String recommendations;
     private ScoreJson score;
 
-    public Integer getaIndex() {
-        return aIndex;
+    public Integer getAnswerId() {
+        return aId;
     }
 
-    public void setaIndex(Integer aIndex) {
-        this.aIndex = aIndex;
+    public void setAnswerId(Integer answerId) {
+        this.aId = answerId;
     }
 
     public String getLabel() {
@@ -23,12 +23,12 @@ public class AnswerJson {
         this.label = label;
     }
 
-    public Integer getFollowUpQuestionIndex() {
-        return followUpQuestionIndex;
+    public Integer getFollowUpQuestionId() {
+        return followUpQuestionId;
     }
 
-    public void setFollowUpQuestionIndex(Integer followUpQuestionIndex) {
-        this.followUpQuestionIndex = followUpQuestionIndex;
+    public void setFollowUpQuestionId(Integer followUpQuestionId) {
+        this.followUpQuestionId = followUpQuestionId;
     }
 
     public String getRecommendations() {

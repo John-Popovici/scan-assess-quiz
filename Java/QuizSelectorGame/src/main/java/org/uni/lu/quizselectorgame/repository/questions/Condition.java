@@ -1,22 +1,22 @@
 package org.uni.lu.quizselectorgame.repository.questions;
 
 public class Condition {
-    private Integer qIndex;
-    private Integer aType;
+    private Integer qId;
+    private Integer answerType;
 
-    public Integer getqIndex() {
-        return qIndex;
+    public Integer getQuestionId() {
+        return qId;
     }
 
-    public void setqIndex(Integer qIndex) {
-        this.qIndex = qIndex;
+    public void setQuestionId(Integer questionId) {
+        this.qId = questionId;
     }
 
-    public Integer getaType() {
-        return aType;
+    public Integer getAnswerType() {
+        return answerType;
     }
 
-    public void setaType(Integer aType) {
-        this.aType = aType;
+    public void setAnswerType(Integer answerType) {
+        this.answerType = answerType;
     }
 }

@@ -11,8 +11,8 @@ public class Question {
     private final String optionTwo;
     private ScoreChange optionOneScoreChange;
     private ScoreChange optionTwoScoreChange;
-    private Question followUpQuestionOptionOne;
-    private Question followUpQuestionOptionTwo;
+    private Integer followUpQuestionIdOptionOne;
+    private Integer followUpQuestionIdOptionTwo;
 
     public Question(String question, String optionOne, String optionTwo, ScoreChange optionOneScoreChange, ScoreChange optionTwoScoreChange) {
         this.question = question;
@@ -58,27 +58,27 @@ public class Question {
         this.optionTwoScoreChange = optionTwoScoreChange;
     }
 
-    public Question getFollowUpQuestionOptionOne() {
-        return followUpQuestionOptionOne;
+    public Integer getFollowUpQuestionIdOptionOne() {
+        return followUpQuestionIdOptionOne;
     }
 
-    public void setFollowUpQuestionOptionOne(Question followUpQuestionOptionOne) {
-        this.followUpQuestionOptionOne = followUpQuestionOptionOne;
+    public void setFollowUpQuestionIdOptionOne(Integer followUpQuestionIdOptionOne) {
+        this.followUpQuestionIdOptionOne = followUpQuestionIdOptionOne;
     }
 
-    public Question getFollowUpQuestionOptionTwo() {
-        return followUpQuestionOptionTwo;
+    public Integer getFollowUpQuestionIdOptionTwo() {
+        return followUpQuestionIdOptionTwo;
     }
 
-    public void setFollowUpQuestionOptionTwo(Question followUpQuestionOptionTwo) {
-        this.followUpQuestionOptionTwo = followUpQuestionOptionTwo;
+    public void setFollowUpQuestionIdOptionTwo(Integer followUpQuestionIdOptionTwo) {
+        this.followUpQuestionIdOptionTwo = followUpQuestionIdOptionTwo;
     }
 
     public boolean hasFollowUpForOptionOne() {
-        return this.followUpQuestionOptionOne != null;
+        return this.followUpQuestionIdOptionOne != null;
     }
 
     public boolean hasFollowUpForOptionTwo() {
-        return this.followUpQuestionOptionTwo != null;
+        return this.followUpQuestionIdOptionTwo != null;
     }
 }

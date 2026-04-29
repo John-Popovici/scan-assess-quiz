@@ -3,26 +3,26 @@ package org.uni.lu.quizselectorgame.repository.questions;
 import java.util.List;
 
 public class QuestionJson {
-    private Integer qIndex;
-    private Integer treeIndex;
+    private Integer qId;
+    private Integer treeId;
     private String label;
     private List<AnswerJson> answers;
     private List<Condition> conditions;
 
-    public Integer getqIndex() {
-        return qIndex;
+    public Integer getQuestionId() {
+        return qId;
     }
 
-    public void setqIndex(Integer qIndex) {
-        this.qIndex = qIndex;
+    public void setQuestionId(Integer questionId) {
+        this.qId = questionId;
     }
 
-    public Integer getTreeIndex() {
-        return treeIndex;
+    public Integer getTreeId() {
+        return treeId;
     }
 
-    public void setTreeIndex(Integer treeIndex) {
-        this.treeIndex = treeIndex;
+    public void setTreeId(Integer treeId) {
+        this.treeId = treeId;
     }
 
     public String getLabel() {

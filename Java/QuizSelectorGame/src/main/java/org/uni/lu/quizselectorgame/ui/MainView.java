@@ -23,10 +23,10 @@ import java.util.Map;
 
 @Route
 public class MainView extends VerticalLayout {
-    private static final Boolean READ_JSON_DATA = true;
+    private static final Boolean GENERATE_QUESTIONS = false;
     private final Map<ScoreType, ProgressBar> scoreTypeProgressBarMap = new HashMap<>();
     private final SecurityScore securityScore = new SecurityScore();
-    private final QuestionRepository questionRepository = new QuestionRepository(READ_JSON_DATA);
+    private final QuestionRepository questionRepository = new QuestionRepository(GENERATE_QUESTIONS);
     private final VerticalLayout questionLayout;
 
     public MainView() {
@@ -34,7 +34,10 @@ public class MainView extends VerticalLayout {
         add(getSecurityScoreLayout());
         questionLayout = new VerticalLayout();
         add(questionLayout);
-        addQuestion(questionRepository.getQuestionAtIndex(0));
+        Question firstQuestion = questionRepository.getFirstQuestion();
+        if (firstQuestion != null) {
+            addQuestion(firstQuestion);
+        }
     }
 
     private VerticalLayout getSecurityScoreLayout() {
@@ -148,7 +151,13 @@ public class MainView extends VerticalLayout {
         ScoreChange scoreChange = question.getOptionOneScoreChange();
         updateScores(scoreChange);
         if (question.hasFollowUpForOptionOne()) {
-            addQuestion(question.getFollowUpQuestionOptionOne());
+            Integer followUpId = question.getFollowUpQuestionIdOptionOne();
+            if (followUpId != null) {
+                Question followUpQuestion = questionRepository.getQuestionById(followUpId);
+                if (followUpQuestion != null) {
+                    addQuestion(followUpQuestion);
+                }
+            }
         }
     }
 
@@ -156,7 +165,13 @@ public class MainView extends VerticalLayout {
         ScoreChange scoreChange = question.getOptionTwoScoreChange();
         updateScores(scoreChange);
         if (question.hasFollowUpForOptionTwo()) {
-            addQuestion(question.getFollowUpQuestionOptionTwo());
+            Integer followUpId = question.getFollowUpQuestionIdOptionTwo();
+            if (followUpId != null) {
+                Question followUpQuestion = questionRepository.getQuestionById(followUpId);
+                if (followUpQuestion != null) {
+                    addQuestion(followUpQuestion);
+                }
+            }
         }
     }
 
