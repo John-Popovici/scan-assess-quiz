@@ -23,10 +23,10 @@ import java.util.Map;
 
 @Route
 public class MainView extends VerticalLayout {
-    private static final Boolean GENERATE_QUESTIONS = false;
+    private static final Boolean USE_DUMMY_QUESTIONS = false;
     private final Map<ScoreType, ProgressBar> scoreTypeProgressBarMap = new HashMap<>();
     private final SecurityScore securityScore = new SecurityScore();
-    private final QuestionRepository questionRepository = new QuestionRepository(GENERATE_QUESTIONS);
+    private final QuestionRepository questionRepository = new QuestionRepository(USE_DUMMY_QUESTIONS);
     private final VerticalLayout questionLayout;
 
     public MainView() {
@@ -34,10 +34,7 @@ public class MainView extends VerticalLayout {
         add(getSecurityScoreLayout());
         questionLayout = new VerticalLayout();
         add(questionLayout);
-        Question firstQuestion = questionRepository.getFirstQuestion();
-        if (firstQuestion != null) {
-            addQuestion(firstQuestion);
-        }
+        addQuestion(questionRepository.getNextAndPopQuestion());
     }
 
     private VerticalLayout getSecurityScoreLayout() {
@@ -48,11 +45,9 @@ public class MainView extends VerticalLayout {
 
     private HorizontalLayout getProgressBarLayout(ScoreType scoreType) {
         ProgressBar progressBar = new ProgressBar(0, 100, securityScore.getScore(scoreType));
-        progressBar.setWidth("250px");
-        progressBar.getStyle().set("height", "12px");
+        progressBar.setWidthFull();
         Icon icon;
         String color;
-
         switch (scoreType) {
             case EMPLOYEE_MANAGEMENT -> {
                 icon = LumoIcon.USER.create();
@@ -109,35 +104,16 @@ public class MainView extends VerticalLayout {
         questionLayout.add(new Text(question.getQuestion()));
         Card leftCard = new Card();
         Card rightCard = new Card();
-        leftCard.setWidth("280px");
-        rightCard.setWidth("280px");
-        leftCard.setHeight("140px");
-        rightCard.setHeight("140px");
 
         Button leftButton = new Button("<-", (ComponentEventListener<ClickEvent<Button>>) _ -> choseOptionOne(question));
         leftButton.addClickShortcut(Key.ARROW_LEFT);
         Button rightButton = new Button("->", (ComponentEventListener<ClickEvent<Button>>) _ -> choseOptionTwo(question));
         rightButton.addClickShortcut(Key.ARROW_RIGHT);
 
-        Span leftText = new Span(question.getOptionOne());
-        Span rightText = new Span(question.getOptionTwo());
-
-        VerticalLayout leftContent = new VerticalLayout(leftText, leftButton);
-        leftContent.setSizeFull();
-        leftContent.setPadding(false);
-        leftContent.setSpacing(false);
-        leftContent.setAlignItems(Alignment.CENTER);
-        leftContent.setJustifyContentMode(JustifyContentMode.BETWEEN);
-
-        VerticalLayout rightContent = new VerticalLayout(rightText, rightButton);
-        rightContent.setSizeFull();
-        rightContent.setPadding(false);
-        rightContent.setSpacing(false);
-        rightContent.setAlignItems(Alignment.CENTER);
-        rightContent.setJustifyContentMode(JustifyContentMode.BETWEEN);
-
-        leftCard.add(leftContent);
-        rightCard.add(rightContent);
+        leftCard.setTitle(question.getOptionOne());
+        leftCard.add(leftButton);
+        rightCard.setTitle(question.getOptionTwo());
+        rightCard.add(rightButton);
 
         HorizontalLayout buttonLayout = new HorizontalLayout(leftCard, rightCard);
         buttonLayout.setWidthFull();
@@ -150,28 +126,42 @@ public class MainView extends VerticalLayout {
     private void choseOptionOne(Question question) {
         ScoreChange scoreChange = question.getOptionOneScoreChange();
         updateScores(scoreChange);
+        questionRepository.updateAnswerGiven(question, 1);
         if (question.hasFollowUpForOptionOne()) {
-            Integer followUpId = question.getFollowUpQuestionIdOptionOne();
-            if (followUpId != null) {
-                Question followUpQuestion = questionRepository.getQuestionById(followUpId);
-                if (followUpQuestion != null) {
-                    addQuestion(followUpQuestion);
-                }
+            Question newQuestion = questionRepository.getQuestionWithIdAndTreeIdAndPop(question.getTreeId(), question.getFollowUpQuestionOptionOne());
+            if (newQuestion != null) {
+                addQuestion(newQuestion);
+                return;
             }
+        }
+        Question nextQuestion = questionRepository.getNextAndPopQuestion();
+        if (nextQuestion != null) {
+            addQuestion(nextQuestion);
+        } else {
+            Dialog endOfQuiz = new Dialog("End of quiz!");
+            endOfQuiz.setModality(ModalityMode.MODELESS);
+            endOfQuiz.open();
         }
     }
 
     private void choseOptionTwo(Question question) {
         ScoreChange scoreChange = question.getOptionTwoScoreChange();
         updateScores(scoreChange);
+        questionRepository.updateAnswerGiven(question, 2);
         if (question.hasFollowUpForOptionTwo()) {
-            Integer followUpId = question.getFollowUpQuestionIdOptionTwo();
-            if (followUpId != null) {
-                Question followUpQuestion = questionRepository.getQuestionById(followUpId);
-                if (followUpQuestion != null) {
-                    addQuestion(followUpQuestion);
-                }
+            Question newQuestion = questionRepository.getQuestionWithIdAndTreeIdAndPop(question.getTreeId(), question.getFollowUpQuestionOptionTwo());
+            if (newQuestion != null) {
+                addQuestion(newQuestion);
+                return;
             }
+        }
+        Question nextQuestion = questionRepository.getNextAndPopQuestion();
+        if (nextQuestion != null) {
+            addQuestion(nextQuestion);
+        } else {
+            Dialog endOfQuiz = new Dialog("End of quiz!");
+            endOfQuiz.setModality(ModalityMode.MODELESS);
+            endOfQuiz.open();
         }
     }
 
@@ -192,7 +182,6 @@ public class MainView extends VerticalLayout {
                     securityScore.increaseScore(scoreType, k.getAmount());
                     scoreTypeProgressBarMap.get(scoreType).setValue(securityScore.getScore(scoreType));
                 });
-
             }
         });
     }
