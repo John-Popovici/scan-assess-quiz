@@ -162,6 +162,10 @@ public class MainView extends VerticalLayout {
                 return;
             }
         }
+        showNextQuestion();
+    }
+
+    private void showNextQuestion() {
         Question nextQuestion = questionRepository.getNextAndPopQuestion();
         if (nextQuestion != null) {
             addQuestion(nextQuestion);
@@ -184,15 +188,7 @@ public class MainView extends VerticalLayout {
                 return;
             }
         }
-        Question nextQuestion = questionRepository.getNextAndPopQuestion();
-        if (nextQuestion != null) {
-            addQuestion(nextQuestion);
-        } else if (!shownEndOfQuiz) {
-            Dialog endOfQuiz = new Dialog("End of quiz!");
-            endOfQuiz.setModality(ModalityMode.STRICT);
-            endOfQuiz.open();
-            shownEndOfQuiz = true;
-        }
+        showNextQuestion();
     }
 
     private void updateScores(ScoreChange scoreChange) {

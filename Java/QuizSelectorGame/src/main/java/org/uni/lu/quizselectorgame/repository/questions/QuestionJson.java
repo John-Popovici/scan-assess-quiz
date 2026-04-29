@@ -2,6 +2,7 @@ package org.uni.lu.quizselectorgame.repository.questions;
 
 import java.util.List;
 
+@SuppressWarnings("unused")
 public class QuestionJson {
     private Integer qId;
     private Integer treeId;

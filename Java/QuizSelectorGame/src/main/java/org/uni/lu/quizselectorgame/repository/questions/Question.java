@@ -18,7 +18,7 @@ public class Question {
     private ScoreChange optionTwoScoreChange;
     private Integer followUpQuestionOptionOne;
     private Integer followUpQuestionOptionTwo;
-    private List<RequiredQuestion> requiredQuestions = new ArrayList<>();
+    private final List<RequiredQuestion> requiredQuestions = new ArrayList<>();
 
     public Question(int questionId, int treeId, String question, String optionOne, String optionTwo, ScoreChange optionOneScoreChange, ScoreChange optionTwoScoreChange) {
         this.questionId = questionId;
@@ -102,9 +102,5 @@ public class Question {
 
     public List<RequiredQuestion> getRequiredQuestions() {
         return requiredQuestions;
-    }
-
-    public void setRequiredQuestions(List<RequiredQuestion> requiredQuestions) {
-        this.requiredQuestions = requiredQuestions;
     }
 }
