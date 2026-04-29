@@ -106,18 +106,40 @@ public class MainView extends VerticalLayout {
         questionLayout.add(new Text(question.getQuestion()));
         Card leftCard = new Card();
         Card rightCard = new Card();
+        leftCard.setWidth("280px");
+        rightCard.setWidth("280px");
+        leftCard.setHeight("140px");
+        rightCard.setHeight("140px");
 
         Button leftButton = new Button("<-", (ComponentEventListener<ClickEvent<Button>>) _ -> choseOptionOne(question));
         leftButton.addClickShortcut(Key.ARROW_LEFT);
         Button rightButton = new Button("->", (ComponentEventListener<ClickEvent<Button>>) _ -> choseOptionTwo(question));
         rightButton.addClickShortcut(Key.ARROW_RIGHT);
 
-        leftCard.setTitle(question.getOptionOne());
-        leftCard.add(leftButton);
-        rightCard.setTitle(question.getOptionTwo());
-        rightCard.add(rightButton);
+        Span leftText = new Span(question.getOptionOne());
+        Span rightText = new Span(question.getOptionTwo());
+
+        VerticalLayout leftContent = new VerticalLayout(leftText, leftButton);
+        leftContent.setSizeFull();
+        leftContent.setPadding(false);
+        leftContent.setSpacing(false);
+        leftContent.setAlignItems(Alignment.CENTER);
+        leftContent.setJustifyContentMode(JustifyContentMode.BETWEEN);
+
+        VerticalLayout rightContent = new VerticalLayout(rightText, rightButton);
+        rightContent.setSizeFull();
+        rightContent.setPadding(false);
+        rightContent.setSpacing(false);
+        rightContent.setAlignItems(Alignment.CENTER);
+        rightContent.setJustifyContentMode(JustifyContentMode.BETWEEN);
+
+        leftCard.add(leftContent);
+        rightCard.add(rightContent);
 
         HorizontalLayout buttonLayout = new HorizontalLayout(leftCard, rightCard);
+        buttonLayout.setWidthFull();
+        buttonLayout.setJustifyContentMode(JustifyContentMode.CENTER);
+        buttonLayout.setAlignItems(Alignment.CENTER);
         questionLayout.add(buttonLayout);
     }
 
