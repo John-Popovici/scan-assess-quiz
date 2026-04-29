@@ -3,8 +3,8 @@ package org.uni.lu.quizselectorgame.repository.questions;
 @SuppressWarnings("unused")
 public class ConditionJson {
     private Integer treeId;
-    private Integer questionId;
-    private Integer answerType;
+    private Integer q_id;
+    private Integer a_id;
 
     public Integer getTreeId() {
         return treeId;
@@ -15,18 +15,18 @@ public class ConditionJson {
     }
 
     public Integer getQuestionId() {
-        return questionId;
+        return q_id;
     }
 
     public void setQuestionId(Integer questionId) {
-        this.questionId = questionId;
+        this.q_id = questionId;
     }
 
-    public Integer getAnswerType() {
-        return answerType;
+    public Integer getAnswerId() {
+        return a_id;
     }
 
-    public void setAnswerType(Integer answerType) {
-        this.answerType = answerType;
+    public void setAnswerId(Integer answerType) {
+        this.a_id = answerType;
     }
 }
