@@ -27,6 +27,8 @@ public class MainView extends VerticalLayout {
     private final SecurityScore securityScore = new SecurityScore();
     private final QuestionRepository questionRepository = new QuestionRepository(USE_DUMMY_QUESTIONS);
     private final VerticalLayout questionLayout;
+    private boolean shownGameOver = false;
+    private boolean shownEndOfQuiz = false;
 
     public MainView() {
         setAlignItems(Alignment.CENTER);
@@ -136,10 +138,11 @@ public class MainView extends VerticalLayout {
         Question nextQuestion = questionRepository.getNextAndPopQuestion();
         if (nextQuestion != null) {
             addQuestion(nextQuestion);
-        } else {
+        } else if (!shownEndOfQuiz) {
             Dialog endOfQuiz = new Dialog("End of quiz!");
-            endOfQuiz.setModality(ModalityMode.MODELESS);
+            endOfQuiz.setModality(ModalityMode.STRICT);
             endOfQuiz.open();
+            shownEndOfQuiz = true;
         }
     }
 
@@ -157,30 +160,37 @@ public class MainView extends VerticalLayout {
         Question nextQuestion = questionRepository.getNextAndPopQuestion();
         if (nextQuestion != null) {
             addQuestion(nextQuestion);
-        } else {
+        } else if (!shownEndOfQuiz) {
             Dialog endOfQuiz = new Dialog("End of quiz!");
-            endOfQuiz.setModality(ModalityMode.MODELESS);
+            endOfQuiz.setModality(ModalityMode.STRICT);
             endOfQuiz.open();
+            shownEndOfQuiz = true;
         }
     }
 
     private void updateScores(ScoreChange scoreChange) {
+        if (scoreChange == null) {
+            return;
+        }
         scoreChange.getMovementType().forEach((k, v) -> {
-            switch (k.getScoreMovementType()) {
-                case DECREASE -> v.forEach(scoreType -> {
-                    securityScore.decreaseScore(scoreType, k.getAmount());
-                    int newAmount = securityScore.getScore(scoreType);
-                    scoreTypeProgressBarMap.get(scoreType).setValue(newAmount);
-                    if (newAmount <= 0) {
-                        Dialog gameOverDialog = new Dialog("Game over!");
-                        gameOverDialog.setModality(ModalityMode.MODELESS);
-                        gameOverDialog.open();
-                    }
-                });
-                case INCREASE -> v.forEach(scoreType -> {
-                    securityScore.increaseScore(scoreType, k.getAmount());
-                    scoreTypeProgressBarMap.get(scoreType).setValue(securityScore.getScore(scoreType));
-                });
+            if (k != null) {
+                switch (k.getScoreMovementType()) {
+                    case DECREASE -> v.forEach(scoreType -> {
+                        securityScore.decreaseScore(scoreType, k.getAmount());
+                        int newAmount = securityScore.getScore(scoreType);
+                        scoreTypeProgressBarMap.get(scoreType).setValue(newAmount);
+                        if (newAmount <= 0 && !shownGameOver) {
+                            Dialog gameOverDialog = new Dialog("Game over!");
+                            gameOverDialog.setModality(ModalityMode.STRICT);
+                            gameOverDialog.open();
+                            shownGameOver = true;
+                        }
+                    });
+                    case INCREASE -> v.forEach(scoreType -> {
+                        securityScore.increaseScore(scoreType, k.getAmount());
+                        scoreTypeProgressBarMap.get(scoreType).setValue(securityScore.getScore(scoreType));
+                    });
+                }
             }
         });
     }

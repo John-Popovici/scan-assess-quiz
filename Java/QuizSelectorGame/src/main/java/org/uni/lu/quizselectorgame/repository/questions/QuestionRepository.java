@@ -199,6 +199,10 @@ public class QuestionRepository {
                 return null;
             }
             questionList = questionMap.get(currentTreeId);
+            if (questionList.isEmpty()) {
+                questionMap.remove(currentTreeId);
+                return getNextAndPopQuestion();
+            }
         }
         Question returnQuestion = questionList.stream().min(Comparator.comparingInt(Question::getQuestionId)).orElse(null);
         if (returnQuestion == null) {
