@@ -108,8 +108,9 @@ public class QuestionRepository {
         Arrays.asList(methods).forEach(m -> {
             try {
                 String toCheck = m.getName().replace("get", "");
-                if (Arrays.stream(ScoreType.values()).anyMatch(t -> t.name().equalsIgnoreCase(toCheck))) {
-                    ScoreType scoreType = ScoreType.valueOf(toCheck);
+                Optional<ScoreType> optionalScoreType = Arrays.stream(ScoreType.values()).filter(t -> t.getPropertyValue().equalsIgnoreCase(toCheck)).findAny();
+                if (optionalScoreType.isPresent()) {
+                    ScoreType scoreType = optionalScoreType.get();
                     ScoreMovementAmount scoreMovementAmount = parseScoreValue((String) m.invoke(scoreJson));
                     scoreMovementAmountListMap.putIfAbsent(scoreMovementAmount, new ArrayList<>());
                     scoreMovementAmountListMap.get(scoreMovementAmount).add(scoreType);

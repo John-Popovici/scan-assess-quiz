@@ -8,7 +8,6 @@ import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.progressbar.ProgressBar;
-import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.theme.lumo.LumoIcon;
 import org.uni.lu.quizselectorgame.enums.ScoreType;
@@ -80,15 +79,15 @@ public class MainView extends VerticalLayout {
         }
 
         icon.setColor(color);
-        // icon.setTooltipText(scoreType.name());
+        icon.setTooltipText(scoreType.getHumanValue());
         progressBar.getStyle().set("--lumo-primary-color", color);
         progressBar.getStyle().set("--vaadin-progress-bar-value-background", color);
 
-        Span label = new Span(scoreType.name());
+        /*Span label = new Span(scoreType.name());
         label.setWidth("250px");
-        label.getStyle().set("text-align", "right");
+        label.getStyle().set("text-align", "right");*/
 
-        HorizontalLayout horizontalLayout = new HorizontalLayout(label, icon, progressBar);
+        HorizontalLayout horizontalLayout = new HorizontalLayout(/*label,*/ icon, progressBar);
         horizontalLayout.setJustifyContentMode(JustifyContentMode.CENTER);
         horizontalLayout.setWidthFull();
 
