@@ -4,6 +4,7 @@ import com.vaadin.flow.component.*;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.card.Card;
 import com.vaadin.flow.component.dialog.Dialog;
+import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -46,7 +47,8 @@ public class MainView extends VerticalLayout {
 
     private HorizontalLayout getProgressBarLayout(ScoreType scoreType) {
         ProgressBar progressBar = new ProgressBar(0, 100, securityScore.getScore(scoreType));
-        progressBar.setWidthFull();
+        progressBar.setWidth(25f, Unit.PERCENTAGE);
+        //progressBar.setHeight(50f, Unit.PERCENTAGE);
         Icon icon;
         String color;
         switch (scoreType) {
@@ -85,11 +87,11 @@ public class MainView extends VerticalLayout {
         progressBar.getStyle().set("--lumo-primary-color", color);
         progressBar.getStyle().set("--vaadin-progress-bar-value-background", color);
 
-        /*Span label = new Span(scoreType.name());
-        label.setWidth("250px");
-        label.getStyle().set("text-align", "right");*/
+        Span label = new Span(scoreType.getHumanValue());
+        label.setWidth(25f, Unit.PERCENTAGE);
+        label.getStyle().set("text-align", "right");
 
-        HorizontalLayout horizontalLayout = new HorizontalLayout(/*label,*/ icon, progressBar);
+        HorizontalLayout horizontalLayout = new HorizontalLayout(label, icon, progressBar);
         horizontalLayout.setJustifyContentMode(JustifyContentMode.CENTER);
         horizontalLayout.setWidthFull();
 
@@ -111,10 +113,25 @@ public class MainView extends VerticalLayout {
         Button rightButton = new Button("->", (ComponentEventListener<ClickEvent<Button>>) _ -> choseOptionTwo(question));
         rightButton.addClickShortcut(Key.ARROW_RIGHT);
 
-        leftCard.setTitle(question.getOptionOne());
-        leftCard.add(leftButton);
-        rightCard.setTitle(question.getOptionTwo());
-        rightCard.add(rightButton);
+        Span leftText = new Span(question.getOptionOne());
+        Span rightText = new Span(question.getOptionTwo());
+
+        VerticalLayout leftContent = new VerticalLayout(leftText, leftButton);
+        leftContent.setSizeFull();
+        leftContent.setPadding(false);
+        leftContent.setSpacing(false);
+        leftContent.setAlignItems(Alignment.CENTER);
+        leftContent.setJustifyContentMode(JustifyContentMode.BETWEEN);
+
+        VerticalLayout rightContent = new VerticalLayout(rightText, rightButton);
+        rightContent.setSizeFull();
+        rightContent.setPadding(false);
+        rightContent.setSpacing(false);
+        rightContent.setAlignItems(Alignment.CENTER);
+        rightContent.setJustifyContentMode(JustifyContentMode.BETWEEN);
+
+        leftCard.add(leftContent);
+        rightCard.add(rightContent);
 
         HorizontalLayout buttonLayout = new HorizontalLayout(leftCard, rightCard);
         buttonLayout.setWidthFull();
