@@ -104,7 +104,11 @@ public class MainView extends VerticalLayout {
     private void addQuestion(Question question) {
         questionLayout.removeAll();
         questionLayout.setAlignItems(Alignment.CENTER);
-        questionLayout.add(new Text(question.getQuestion()));
+        Span textSpan = new Span(new Text(question.getQuestion()));
+        textSpan.getStyle()
+                .set("font-size", "20px")
+                .set("font-weight", "bold");
+        questionLayout.add(textSpan);
         Card leftCard = new Card();
         leftCard.setWidth(25f, Unit.PERCENTAGE);
         //leftCard.setHeight(30f, Unit.PERCENTAGE);
