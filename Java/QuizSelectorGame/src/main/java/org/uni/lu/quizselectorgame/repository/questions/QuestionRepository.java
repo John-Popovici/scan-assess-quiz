@@ -1,10 +1,9 @@
 package org.uni.lu.quizselectorgame.repository.questions;
 
-import com.google.gson.Gson;
 import com.google.gson.FieldNamingPolicy;
+import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
-import com.google.gson.JsonSyntaxException;
 import jakarta.annotation.Nullable;
 import org.uni.lu.quizselectorgame.enums.QuestionOption;
 import org.uni.lu.quizselectorgame.enums.ScoreMovementType;
@@ -57,10 +56,10 @@ public class QuestionRepository {
                             List<QuestionJson> questionJsons = gson.fromJson(jsonRead, listType);
 
                             questionJsons.forEach(qj -> {
-                                if (qj.getAnswers() != null && qj.getAnswers().size() == 2) {
+                                if (qj.getQuestionId() != null && qj.getAnswers() != null && qj.getAnswers().size() == 2) {
                                     AnswerJson answerOneJson = qj.getAnswers().getFirst();
                                     AnswerJson answerTwoJson = qj.getAnswers().getLast();
-                                    Question question = new Question(qj.getqIndex(), qj.getTreeIndex(), qj.getLabel(), answerOneJson.getLabel(), answerTwoJson.getLabel());
+                                    Question question = new Question(qj.getQuestionId(), qj.getTreeId(), qj.getLabel(), answerOneJson.getLabel(), answerTwoJson.getLabel());
                                     if (answerOneJson.getScore() != null) {
                                         Map<ScoreMovementAmount, List<ScoreType>> scoreMovementAmountListMap = new HashMap<>();
                                         createScoreMovementMapping(answerOneJson, scoreMovementAmountListMap);
@@ -73,13 +72,13 @@ public class QuestionRepository {
                                         ScoreChange scoreChange = new ScoreChange(QuestionOption.OPTION_TWO, scoreMovementAmountListMap);
                                         question.setOptionTwoScoreChange(scoreChange);
                                     }
-                                    if (answerOneJson.getFollowUpQuestionIndex() != null) {
-                                        question.setFollowUpQuestionOptionOne(answerOneJson.getFollowUpQuestionIndex());
+                                    if (answerOneJson.getFollowUpQuestionId() != null) {
+                                        question.setFollowUpQuestionOptionOne(answerOneJson.getFollowUpQuestionId());
                                     }
 
                                     if (qj.getConditions() != null && !qj.getConditions().isEmpty()) {
                                         qj.getConditions().forEach(condition -> {
-                                            RequiredQuestion requiredQuestion = new RequiredQuestion(condition.getTreeIndex(), condition.getqIndex(), condition.getaType());
+                                            RequiredQuestion requiredQuestion = new RequiredQuestion(condition.getTreeIndex(), condition.getQuestionId(), condition.getAnswerType());
                                             question.getRequiredQuestions().add(requiredQuestion);
                                         });
                                     }
@@ -87,7 +86,7 @@ public class QuestionRepository {
                                     questionMap.putIfAbsent(question.getTreeId(), new ArrayList<>());
                                     questionMap.get(question.getTreeId()).add(question);
                                 } else {
-                                    logger.log(Level.SEVERE, qj.getqIndex() + " is an invalid question");
+                                    logger.log(Level.SEVERE, qj.getQuestionId() + " is an invalid question");
                                 }
                             });
                             jsonDataRead = true;

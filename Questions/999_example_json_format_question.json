@@ -1,7 +1,7 @@
 [
   {
-    "qIndex": 1,
-    "treeIndex": 1,
+    "q_id": 1,
+    "tree_id": 999,
     "label": "You visit a hotel, do you connect to the WiFi?",
     "answers": [
       {
@@ -34,19 +34,19 @@
     ]
   },
   {
-    "qIndex": 2,
-    "treeIndex": 1,
+    "q_id": 2,
+    "tree_id": 999,
     "label": "Do you use a VPN?",
     "conditions": [
       {
-        "treeIndex": 1,
-        "qIndex": 1,
-        "aType": 1
+        "tree_id": 1,
+        "q_id": 1,
+        "a_id": 1
       }
     ],
     "answers": [
       {
-        "aIndex": 1,
+        "a_id": 1,
         "label": "Yes",
         "score": {
           "EMPLOYEE_MANAGEMENT": "+1",
@@ -59,7 +59,7 @@
         "recommendations": ""
       },
       {
-        "aIndex": 2,
+        "a_id": 2,
         "score": {
           "EMPLOYEE_MANAGEMENT": "+1",
           "LOGICAL_ACCESS": "0",
