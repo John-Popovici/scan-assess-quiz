@@ -106,7 +106,11 @@ public class MainView extends VerticalLayout {
         questionLayout.setAlignItems(Alignment.CENTER);
         questionLayout.add(new Text(question.getQuestion()));
         Card leftCard = new Card();
+        leftCard.setWidth(25f, Unit.PERCENTAGE);
+        //leftCard.setHeight(30f, Unit.PERCENTAGE);
         Card rightCard = new Card();
+        rightCard.setWidth(25f, Unit.PERCENTAGE);
+        //rightCard.setHeight(30f, Unit.PERCENTAGE);
 
         Button leftButton = new Button("<-", (ComponentEventListener<ClickEvent<Button>>) _ -> choseOptionOne(question));
         leftButton.addClickShortcut(Key.ARROW_LEFT);
