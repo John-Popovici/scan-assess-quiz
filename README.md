@@ -33,7 +33,11 @@ Maven tool, for building project and adding dependencies
 
 ### Run
 
-mvn clean install on QuizSelectorGame
+```maven
+mvn clean install
+```
+
+on QuizSelectorGame
 And then run QuizSelectorGameApplication
 Will be compiled into a WAR later
 
