@@ -47,8 +47,8 @@ public class MainView extends VerticalLayout {
 
     private HorizontalLayout getProgressBarLayout(ScoreType scoreType) {
         ProgressBar progressBar = new ProgressBar(0, 100, securityScore.getScore(scoreType));
-        progressBar.setWidth("250px");
-        progressBar.getStyle().set("height", "12px");
+        progressBar.setWidth(25f, Unit.PERCENTAGE);
+        //progressBar.setHeight(50f, Unit.PERCENTAGE);
         Icon icon;
         String color;
         switch (scoreType) {
@@ -88,7 +88,7 @@ public class MainView extends VerticalLayout {
         progressBar.getStyle().set("--vaadin-progress-bar-value-background", color);
 
         Span label = new Span(scoreType.getHumanValue());
-        label.setWidth("250px");
+        label.setWidth(25f, Unit.PERCENTAGE);
         label.getStyle().set("text-align", "right");
 
         HorizontalLayout horizontalLayout = new HorizontalLayout(label, icon, progressBar);
