@@ -1,5 +1,6 @@
 package org.uni.lu.quizselectorgame.repository.questions;
 
+@SuppressWarnings("unused")
 public class AnswerJson {
     private Integer aId;
     private String label;

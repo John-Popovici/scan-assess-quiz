@@ -1,39 +1,38 @@
 package org.uni.lu.quizselectorgame.repository.questions;
 
-import com.google.gson.Gson;
 import com.google.gson.FieldNamingPolicy;
+import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
-import com.google.gson.JsonSyntaxException;
 import jakarta.annotation.Nullable;
 import org.uni.lu.quizselectorgame.enums.QuestionOption;
 import org.uni.lu.quizselectorgame.enums.ScoreMovementType;
 import org.uni.lu.quizselectorgame.enums.ScoreType;
 import org.uni.lu.quizselectorgame.repository.ScoreChange;
+import org.uni.lu.quizselectorgame.repository.answers.AnswerGiven;
 import org.uni.lu.quizselectorgame.repository.answers.ScoreMovementAmount;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.nio.file.Files;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class QuestionRepository {
 
-    private static final Gson GSON = new GsonBuilder()
-            .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
-            .create();
     private final Logger logger = Logger.getLogger(QuestionRepository.class.getName());
-    private final Map<Integer, Question> questionById = new HashMap<>();
+    private final Map<Integer, List<Question>> questionMap = new HashMap<>();
+
+    private final Map<Integer, List<AnswerGiven>> answerGivens = new HashMap<>();
+
+    private Integer currentTreeId = 0;
 
     public QuestionRepository() {
-        this(false);
+        this(true);
     }
 
     public QuestionRepository(boolean createDummyQuestion) {
@@ -41,78 +40,85 @@ public class QuestionRepository {
             createDummyQuestions();
         } else {
             //read JSON data
+            boolean jsonDataRead = false;
             File directory = new File("Questions/");
             if (directory.exists() && directory.isDirectory()) {
                 File[] jsonFiles = directory.listFiles((_, name) -> name.toLowerCase(Locale.ROOT).endsWith(".json"));
                 if (jsonFiles != null) {
-                    questionById.clear();
-
                     for (File jsonFile : jsonFiles) {
                         try {
                             String jsonRead = Files.readString(jsonFile.toPath());
+                            Gson gson = new GsonBuilder()
+                                    .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
+                                    .create();
                             Type listType = new TypeToken<List<QuestionJson>>() {
                             }.getType();
-                            List<QuestionJson> questionJsons = GSON.fromJson(jsonRead, listType);
+                            List<QuestionJson> questionJsons = gson.fromJson(jsonRead, listType);
 
                             questionJsons.forEach(qj -> {
-                                if (qj.getQuestionId() == null) {
-                                    logger.log(Level.SEVERE, "Question without qIndex found in " + jsonFile.getName());
-                                    return;
-                                }
+                                if (qj.getQuestionId() != null && qj.getAnswers() != null && qj.getAnswers().size() == 2) {
+                                    AnswerJson answerOneJson = qj.getAnswers().getFirst();
+                                    AnswerJson answerTwoJson = qj.getAnswers().getLast();
+                                    Question question = new Question(qj.getQuestionId(), qj.getTreeId(), qj.getLabel(), answerOneJson.getLabel(), answerTwoJson.getLabel());
+                                    if (answerOneJson.getScore() != null) {
+                                        Map<ScoreMovementAmount, List<ScoreType>> scoreMovementAmountListMap = new HashMap<>();
+                                        createScoreMovementMapping(answerOneJson, scoreMovementAmountListMap);
+                                        ScoreChange scoreChange = new ScoreChange(QuestionOption.OPTION_ONE, scoreMovementAmountListMap);
+                                        question.setOptionOneScoreChange(scoreChange);
+                                    }
+                                    if (answerTwoJson.getScore() != null) {
+                                        Map<ScoreMovementAmount, List<ScoreType>> scoreMovementAmountListMap = new HashMap<>();
+                                        createScoreMovementMapping(answerTwoJson, scoreMovementAmountListMap);
+                                        ScoreChange scoreChange = new ScoreChange(QuestionOption.OPTION_TWO, scoreMovementAmountListMap);
+                                        question.setOptionTwoScoreChange(scoreChange);
+                                    }
+                                    if (answerOneJson.getFollowUpQuestionId() != null) {
+                                        question.setFollowUpQuestionOptionOne(answerOneJson.getFollowUpQuestionId());
+                                    }
 
-                                if (qj.getAnswers() == null || qj.getAnswers().size() != 2) {
+                                    if (qj.getConditions() != null && !qj.getConditions().isEmpty()) {
+                                        qj.getConditions().forEach(condition -> {
+                                            RequiredQuestion requiredQuestion = new RequiredQuestion(condition.getTreeId(), condition.getQuestionId(), condition.getAnswerId());
+                                            question.getRequiredQuestions().add(requiredQuestion);
+                                        });
+                                    }
+
+                                    questionMap.putIfAbsent(question.getTreeId(), new ArrayList<>());
+                                    questionMap.get(question.getTreeId()).add(question);
+                                } else {
                                     logger.log(Level.SEVERE, qj.getQuestionId() + " is an invalid question");
-                                    return;
                                 }
-
-                                AnswerJson answerOneJson = qj.getAnswers().getFirst();
-                                AnswerJson answerTwoJson = qj.getAnswers().getLast();
-                                Question question = new Question(qj.getLabel(), answerOneJson.getLabel(), answerTwoJson.getLabel());
-                                question.setOptionOneScoreChange(buildScoreChange(QuestionOption.OPTION_ONE, answerOneJson.getScore()));
-                                question.setOptionTwoScoreChange(buildScoreChange(QuestionOption.OPTION_TWO, answerTwoJson.getScore()));
-                                question.setFollowUpQuestionIdOptionOne(answerOneJson.getFollowUpQuestionId());
-                                question.setFollowUpQuestionIdOptionTwo(answerTwoJson.getFollowUpQuestionId());
-
-                                questionById.put(qj.getQuestionId(), question);
                             });
-
+                            jsonDataRead = true;
                         } catch (IOException e) {
                             logger.log(Level.WARNING, e.getMessage());
                         }
                     }
                 }
             }
-
-            if (questionById.isEmpty()) {
-                logger.log(Level.SEVERE, "No questions were loaded from JSON");
+            if (!jsonDataRead || questionMap.isEmpty()) {
                 createDummyQuestions();
             }
         }
     }
 
-    private ScoreChange buildScoreChange(QuestionOption option, ScoreJson scoreJson) {
-        Map<ScoreMovementAmount, List<ScoreType>> scoreMovementAmountListMap = new HashMap<>();
-        if (scoreJson == null) {
-            return new ScoreChange(option, scoreMovementAmountListMap);
-        }
-
-        addScoreMovement(scoreMovementAmountListMap, scoreJson.getEmployeeManagement(), ScoreType.EMPLOYEE_MANAGEMENT);
-        addScoreMovement(scoreMovementAmountListMap, scoreJson.getLogicalAccess(), ScoreType.LOGICAL_ACCESS);
-        addScoreMovement(scoreMovementAmountListMap, scoreJson.getAwarenessAndCompliance(), ScoreType.AWARENESS_AND_COMPLIANCE);
-        addScoreMovement(scoreMovementAmountListMap, scoreJson.getInformationSystem(), ScoreType.INFORMATION_SYSTEM);
-        addScoreMovement(scoreMovementAmountListMap, scoreJson.getLocalAreaNetwork(), ScoreType.LOCAL_AREA_NETWORK);
-        addScoreMovement(scoreMovementAmountListMap, scoreJson.getThirdPartyManagement(), ScoreType.THIRD_PARTY_MANAGEMENT);
-
-        return new ScoreChange(option, scoreMovementAmountListMap);
-    }
-
-    private void addScoreMovement(Map<ScoreMovementAmount, List<ScoreType>> scoreMovementAmountListMap, String value, ScoreType scoreType) {
-        ScoreMovementAmount scoreMovementAmount = parseScoreValue(value);
-        if (scoreMovementAmount == null) {
-            return;
-        }
-        scoreMovementAmountListMap.putIfAbsent(scoreMovementAmount, new ArrayList<>());
-        scoreMovementAmountListMap.get(scoreMovementAmount).add(scoreType);
+    private void createScoreMovementMapping(AnswerJson answerOneJson, Map<ScoreMovementAmount, List<ScoreType>> scoreMovementAmountListMap) {
+        ScoreJson scoreJson = answerOneJson.getScore();
+        Method[] methods = scoreJson.getClass().getMethods();
+        Arrays.asList(methods).forEach(m -> {
+            try {
+                String toCheck = m.getName().replace("get", "");
+                Optional<ScoreType> optionalScoreType = Arrays.stream(ScoreType.values()).filter(t -> t.getPropertyValue().equalsIgnoreCase(toCheck)).findAny();
+                if (optionalScoreType.isPresent()) {
+                    ScoreType scoreType = optionalScoreType.get();
+                    ScoreMovementAmount scoreMovementAmount = parseScoreValue((String) m.invoke(scoreJson));
+                    scoreMovementAmountListMap.putIfAbsent(scoreMovementAmount, new ArrayList<>());
+                    scoreMovementAmountListMap.get(scoreMovementAmount).add(scoreType);
+                }
+            } catch (InvocationTargetException | IllegalAccessException e) {
+                logger.log(Level.WARNING, e.getMessage());
+            }
+        });
     }
 
     @Nullable
@@ -129,7 +135,6 @@ public class QuestionRepository {
             scoreMovementType = ScoreMovementType.INCREASE;
             value = value.replace("+", "");
         }
-
         try {
             int amount = Integer.parseInt(value.trim());
             if (amount == 0) {
@@ -143,7 +148,6 @@ public class QuestionRepository {
     }
 
     private void createDummyQuestions() {
-        /*
         Map<ScoreMovementAmount, List<ScoreType>> optionOneScoreMovementType = new HashMap<>();
         ScoreMovementAmount scoreMovementAmount = new ScoreMovementAmount(ScoreMovementType.INCREASE, 2);
         ScoreMovementAmount scoreMovementAmountDecrease = new ScoreMovementAmount(ScoreMovementType.DECREASE, 1);
@@ -151,6 +155,8 @@ public class QuestionRepository {
         optionOneScoreMovementType.put(scoreMovementAmountDecrease, List.of(ScoreType.AWARENESS_AND_COMPLIANCE));
         ScoreChange optionOneScoreChange = new ScoreChange(QuestionOption.OPTION_ONE, optionOneScoreMovementType);
         Question hotelConnectQuestion = new Question(
+                1,
+                1,
                 "You go to a hotel, do you connect to the WiFi?",
                 "No, I don't trust them",
                 "Yes, I see no issue",
@@ -160,25 +166,76 @@ public class QuestionRepository {
         Map<ScoreMovementAmount, List<ScoreType>> optionTwoScoreMovementType = new HashMap<>();
         optionTwoScoreMovementType.put(scoreMovementAmountDecrease, Arrays.asList(ScoreType.LOGICAL_ACCESS, ScoreType.EMPLOYEE_MANAGEMENT));
         ScoreChange optionTwoScoreChange = new ScoreChange(QuestionOption.OPTION_TWO, optionTwoScoreMovementType);
-        Question vpnQuestion = new Question(
+        hotelConnectQuestion.setFollowUpQuestionOptionTwo(2);
+        Question hotelFollowUpQuestion = new Question(
+                2,
+                1,
                 "Are you using a VPN?",
                 "Yes",
                 "No",
                 new ScoreChange(QuestionOption.OPTION_ONE, new HashMap<>()),
-            optionTwoScoreChange);
-        hotelConnectQuestion.setFollowUpQuestionIdOptionTwo(2);
-
-        questionById.clear();
-        questionById.put(1, hotelConnectQuestion);
-        questionById.put(2, vpnQuestion);
-        */
+                optionTwoScoreChange);
+        questionMap.put(hotelConnectQuestion.getTreeId(), Arrays.asList(hotelConnectQuestion, hotelFollowUpQuestion));
     }
 
-    public Question getQuestionById(int questionId) {
-        return questionById.get(questionId);
+    public Question getQuestionWithIdAndTreeIdAndPop(int treeId, int questionId) {
+        List<Question> questions = questionMap.get(treeId);
+        Question question = questions.stream().filter(q -> q.getQuestionId() == questionId).findAny().orElse(null);
+        if (question != null) {
+            questions.remove(question);
+            questionMap.put(treeId, questions);
+        }
+        return question;
     }
 
-    public Question getFirstQuestion() {
-        return questionById.keySet().stream().sorted().findFirst().map(questionById::get).orElse(null);
+    public Question getNextAndPopQuestion() {
+        if (questionMap.isEmpty()) {
+            return null;
+        }
+        List<Question> questionList = questionMap.get(currentTreeId);
+        if (questionList == null || questionList.isEmpty()) {
+            currentTreeId = questionMap.keySet().stream().min(Integer::compareTo).orElse(null);
+            if (currentTreeId == null) {
+                return null;
+            }
+            questionList = questionMap.get(currentTreeId);
+            if (questionList.isEmpty()) {
+                questionMap.remove(currentTreeId);
+                return getNextAndPopQuestion();
+            }
+        }
+        Question returnQuestion = questionList.stream().min(Comparator.comparingInt(Question::getQuestionId)).orElse(null);
+        if (returnQuestion == null) {
+            questionMap.remove(currentTreeId);
+            return getNextAndPopQuestion();
+        }
+
+        //currentQuestionId = returnQuestion.getQuestionId();
+        questionList.remove(returnQuestion);
+        questionMap.put(returnQuestion.getTreeId(), questionList);
+        if (!returnQuestion.getRequiredQuestions().isEmpty()) {
+            if (answerGivens.isEmpty()) {
+                return getNextAndPopQuestion();
+            } else {
+                for (RequiredQuestion requiredQuestion : returnQuestion.getRequiredQuestions()) {
+                    List<AnswerGiven> answersToCheck = answerGivens.get(requiredQuestion.getTreeIndex());
+                    if (answersToCheck == null || answersToCheck.isEmpty()) {
+                        return getNextAndPopQuestion();
+                    }
+                    if (answersToCheck.stream().noneMatch(ac ->
+                            ac.getQuestion().getQuestionId() == requiredQuestion.getQuestionIndex() &&
+                                    Objects.equals(ac.getOptionChosen(), requiredQuestion.getAnswerOptionIndex()))) {
+                        return getNextAndPopQuestion();
+                    }
+                }
+            }
+        }
+
+        return returnQuestion;
+    }
+
+    public void updateAnswerGiven(Question question, Integer optionChosen) {
+        answerGivens.putIfAbsent(question.getTreeId(), new ArrayList<>());
+        answerGivens.get(question.getTreeId()).add(new AnswerGiven(question, optionChosen));
     }
 }

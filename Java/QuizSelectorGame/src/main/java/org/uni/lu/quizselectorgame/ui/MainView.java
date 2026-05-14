@@ -4,11 +4,11 @@ import com.vaadin.flow.component.*;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.card.Card;
 import com.vaadin.flow.component.dialog.Dialog;
+import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.progressbar.ProgressBar;
-import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.theme.lumo.LumoIcon;
 import org.uni.lu.quizselectorgame.enums.ScoreType;
@@ -23,21 +23,20 @@ import java.util.Map;
 
 @Route
 public class MainView extends VerticalLayout {
-    private static final Boolean GENERATE_QUESTIONS = false;
+    private static final Boolean USE_DUMMY_QUESTIONS = false;
     private final Map<ScoreType, ProgressBar> scoreTypeProgressBarMap = new HashMap<>();
     private final SecurityScore securityScore = new SecurityScore();
-    private final QuestionRepository questionRepository = new QuestionRepository(GENERATE_QUESTIONS);
+    private final QuestionRepository questionRepository = new QuestionRepository(USE_DUMMY_QUESTIONS);
     private final VerticalLayout questionLayout;
+    private boolean shownGameOver = false;
+    private boolean shownEndOfQuiz = false;
 
     public MainView() {
         setAlignItems(Alignment.CENTER);
         add(getSecurityScoreLayout());
         questionLayout = new VerticalLayout();
         add(questionLayout);
-        Question firstQuestion = questionRepository.getFirstQuestion();
-        if (firstQuestion != null) {
-            addQuestion(firstQuestion);
-        }
+        addQuestion(questionRepository.getNextAndPopQuestion());
     }
 
     private VerticalLayout getSecurityScoreLayout() {
@@ -48,11 +47,10 @@ public class MainView extends VerticalLayout {
 
     private HorizontalLayout getProgressBarLayout(ScoreType scoreType) {
         ProgressBar progressBar = new ProgressBar(0, 100, securityScore.getScore(scoreType));
-        progressBar.setWidth("250px");
-        progressBar.getStyle().set("height", "12px");
+        progressBar.setWidth(25f, Unit.PERCENTAGE);
+        //progressBar.setHeight(50f, Unit.PERCENTAGE);
         Icon icon;
         String color;
-
         switch (scoreType) {
             case EMPLOYEE_MANAGEMENT -> {
                 icon = LumoIcon.USER.create();
@@ -85,12 +83,12 @@ public class MainView extends VerticalLayout {
         }
 
         icon.setColor(color);
-        // icon.setTooltipText(scoreType.name());
+        icon.setTooltipText(scoreType.getHumanValue());
         progressBar.getStyle().set("--lumo-primary-color", color);
         progressBar.getStyle().set("--vaadin-progress-bar-value-background", color);
 
-        Span label = new Span(scoreType.name());
-        label.setWidth("250px");
+        Span label = new Span(scoreType.getHumanValue());
+        label.setWidth(25f, Unit.PERCENTAGE);
         label.getStyle().set("text-align", "right");
 
         HorizontalLayout horizontalLayout = new HorizontalLayout(label, icon, progressBar);
@@ -106,18 +104,24 @@ public class MainView extends VerticalLayout {
     private void addQuestion(Question question) {
         questionLayout.removeAll();
         questionLayout.setAlignItems(Alignment.CENTER);
-        questionLayout.add(new Text(question.getQuestion()));
+        Span textSpan = new Span(new Text(question.getQuestion()));
+        textSpan.getStyle()
+                .set("font-size", "20px")
+                .set("font-weight", "bold");
+        questionLayout.add(textSpan);
         Card leftCard = new Card();
+        leftCard.setWidth(25f, Unit.PERCENTAGE);
+        //leftCard.setHeight(30f, Unit.PERCENTAGE);
         Card rightCard = new Card();
-        leftCard.setWidth("280px");
-        rightCard.setWidth("280px");
-        leftCard.setHeight("140px");
-        rightCard.setHeight("140px");
+        rightCard.setWidth(25f, Unit.PERCENTAGE);
+        //rightCard.setHeight(30f, Unit.PERCENTAGE);
 
         Button leftButton = new Button("<-", (ComponentEventListener<ClickEvent<Button>>) _ -> choseOptionOne(question));
         leftButton.addClickShortcut(Key.ARROW_LEFT);
+        leftButton.setWidth(50f, Unit.PERCENTAGE);
         Button rightButton = new Button("->", (ComponentEventListener<ClickEvent<Button>>) _ -> choseOptionTwo(question));
         rightButton.addClickShortcut(Key.ARROW_RIGHT);
+        rightButton.setWidth(50f, Unit.PERCENTAGE);
 
         Span leftText = new Span(question.getOptionOne());
         Span rightText = new Span(question.getOptionTwo());
@@ -150,49 +154,66 @@ public class MainView extends VerticalLayout {
     private void choseOptionOne(Question question) {
         ScoreChange scoreChange = question.getOptionOneScoreChange();
         updateScores(scoreChange);
+        questionRepository.updateAnswerGiven(question, 1);
         if (question.hasFollowUpForOptionOne()) {
-            Integer followUpId = question.getFollowUpQuestionIdOptionOne();
-            if (followUpId != null) {
-                Question followUpQuestion = questionRepository.getQuestionById(followUpId);
-                if (followUpQuestion != null) {
-                    addQuestion(followUpQuestion);
-                }
+            Question newQuestion = questionRepository.getQuestionWithIdAndTreeIdAndPop(question.getTreeId(), question.getFollowUpQuestionOptionOne());
+            if (newQuestion != null) {
+                addQuestion(newQuestion);
+                return;
             }
+        }
+        showNextQuestion();
+    }
+
+    private void showNextQuestion() {
+        Question nextQuestion = questionRepository.getNextAndPopQuestion();
+        if (nextQuestion != null) {
+            addQuestion(nextQuestion);
+        } else if (!shownEndOfQuiz) {
+            Dialog endOfQuiz = new Dialog("End of quiz!");
+            endOfQuiz.setModality(ModalityMode.STRICT);
+            endOfQuiz.open();
+            shownEndOfQuiz = true;
         }
     }
 
     private void choseOptionTwo(Question question) {
         ScoreChange scoreChange = question.getOptionTwoScoreChange();
         updateScores(scoreChange);
+        questionRepository.updateAnswerGiven(question, 2);
         if (question.hasFollowUpForOptionTwo()) {
-            Integer followUpId = question.getFollowUpQuestionIdOptionTwo();
-            if (followUpId != null) {
-                Question followUpQuestion = questionRepository.getQuestionById(followUpId);
-                if (followUpQuestion != null) {
-                    addQuestion(followUpQuestion);
-                }
+            Question newQuestion = questionRepository.getQuestionWithIdAndTreeIdAndPop(question.getTreeId(), question.getFollowUpQuestionOptionTwo());
+            if (newQuestion != null) {
+                addQuestion(newQuestion);
+                return;
             }
         }
+        showNextQuestion();
     }
 
     private void updateScores(ScoreChange scoreChange) {
+        if (scoreChange == null) {
+            return;
+        }
         scoreChange.getMovementType().forEach((k, v) -> {
-            switch (k.getScoreMovementType()) {
-                case DECREASE -> v.forEach(scoreType -> {
-                    securityScore.decreaseScore(scoreType, k.getAmount());
-                    int newAmount = securityScore.getScore(scoreType);
-                    scoreTypeProgressBarMap.get(scoreType).setValue(newAmount);
-                    if (newAmount <= 0) {
-                        Dialog gameOverDialog = new Dialog("Game over!");
-                        gameOverDialog.setModality(ModalityMode.MODELESS);
-                        gameOverDialog.open();
-                    }
-                });
-                case INCREASE -> v.forEach(scoreType -> {
-                    securityScore.increaseScore(scoreType, k.getAmount());
-                    scoreTypeProgressBarMap.get(scoreType).setValue(securityScore.getScore(scoreType));
-                });
-
+            if (k != null) {
+                switch (k.getScoreMovementType()) {
+                    case DECREASE -> v.forEach(scoreType -> {
+                        securityScore.decreaseScore(scoreType, k.getAmount());
+                        int newAmount = securityScore.getScore(scoreType);
+                        scoreTypeProgressBarMap.get(scoreType).setValue(newAmount);
+                        if (newAmount <= 0 && !shownGameOver) {
+                            Dialog gameOverDialog = new Dialog("Game over!");
+                            gameOverDialog.setModality(ModalityMode.STRICT);
+                            gameOverDialog.open();
+                            shownGameOver = true;
+                        }
+                    });
+                    case INCREASE -> v.forEach(scoreType -> {
+                        securityScore.increaseScore(scoreType, k.getAmount());
+                        scoreTypeProgressBarMap.get(scoreType).setValue(securityScore.getScore(scoreType));
+                    });
+                }
             }
         });
     }

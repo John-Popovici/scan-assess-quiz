@@ -1,5 +1,6 @@
 package org.uni.lu.quizselectorgame.repository.questions;
 
+@SuppressWarnings("unused")
 public class ScoreJson {
 
     private String employeeManagement;
